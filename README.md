@@ -13,14 +13,14 @@ Swift solutions for [Neetcode's Algorithm Roadmap](https://neetcode.io/roadmap) 
 |✅| 1 | Two Sum | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | [src](./Sources/leetcode/1/TwoSum.swift) | [url](https://leetcode.com/problems/two-sum/) |
 |✅| 49 | Group Anagrams | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/49/GroupAnagrams.swift) | [url](https://leetcode.com/problems/group-anagrams/) |
 |✅| 347 | Top K Frequent Elements | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/347/TopKFrequentElements.swift) | [url](https://leetcode.com/problems/top-k-frequent-elements/) |
-|❌| 238 | Product of Array Except Self | ![Medium](https://placehold.co/15x15/fae246/fae246.png) |  | [url](https://leetcode.com/problems/product-of-array-except-self/) |
+|✅| 238 | Product of Array Except Self | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/238/ProductExceptSelf.swift) | [url](https://leetcode.com/problems/product-of-array-except-self/) |
 |✅| 36 | Valid Sudoku | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/36/ValidSudoku.swift) | [url](https://leetcode.com/problems/valid-sudoku/) |
 |✅| 271 | Encode and Decode Strings | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/271/EncodeAndDecodeStrings.swift) | [url](https://leetcode.com/problems/encode-and-decode-strings/) |
 |✅| 128 | Longest Consecutive Sequence | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | [src](./Sources/leetcode/128/LongestConsecutiveSequence.swift) | [url](https://leetcode.com/problems/longest-consecutive-sequence/) |
 
 | | | Two Pointers | | | |
 | -- | -- | -- | -- | -- | -- |
-|❌| 125 | Valid Palindrome | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) |  | [url](https://leetcode.com/problems/valid-palindrome/) |
+|✅| 125 | Valid Palindrome | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | [src](./Sources/leetcode/125/ValidPalindrome.swift)  | [url](https://leetcode.com/problems/valid-palindrome/) |
 |❌| 167 | Two Sum II Input Array Is Sorted | ![Medium](https://placehold.co/15x15/fae246/fae246.png) |  | [url](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 |❌| 15 | 3Sum | ![Medium](https://placehold.co/15x15/fae246/fae246.png) |  | [url](https://leetcode.com/problems/3sum/) |
 |❌| 11 | Container With Most Water | ![Medium](https://placehold.co/15x15/fae246/fae246.png) |  | [url](https://leetcode.com/problems/container-with-most-water/) |
