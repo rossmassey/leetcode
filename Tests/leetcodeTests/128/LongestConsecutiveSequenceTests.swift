@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test128 : XCTestCase {
+final class LongestConsecutiveSequenceTests : XCTestCase {
     
     let longestConsecutiveSequence = Solution128.longestConsecutiveSequence
     

@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test1 : XCTestCase {
+final class TwoSumTests : XCTestCase {
     
 // TODO
 }

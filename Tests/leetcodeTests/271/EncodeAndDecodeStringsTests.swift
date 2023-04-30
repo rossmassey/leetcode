@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test271 : XCTestCase {
+final class EncodeAndDecodeStringsTests : XCTestCase {
     
     let encode = Solution271.encode
     let decode = Solution271.decode

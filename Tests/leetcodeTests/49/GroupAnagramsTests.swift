@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test49 : XCTestCase {
+final class GroupAnagramsTests : XCTestCase {
     
     let groupAnagrams = Solution49.groupAnagrams
     

@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test347 : XCTestCase {
+final class TopKFrequentElementsTests : XCTestCase {
     
     let topKFrequent = Solution347.topKFrequent
     

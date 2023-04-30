@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test217 : XCTestCase {
+final class ContainsDuplicateTests : XCTestCase {
     
     let containsDuplicate = Solution217.containsDuplicate
     

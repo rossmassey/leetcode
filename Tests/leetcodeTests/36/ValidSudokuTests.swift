@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test36 : XCTestCase {
+final class ValidSudokuTests : XCTestCase {
     
     let isValidSudoku = Solution36.isValidSudoku
     

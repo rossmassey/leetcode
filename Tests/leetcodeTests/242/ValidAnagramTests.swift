@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class Test242 : XCTestCase {
+final class ValidAnagramTests : XCTestCase {
     
     let isAnagram = Solution242.isAnagram
     
