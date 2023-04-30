@@ -1,6 +1,6 @@
 # Leetcode
 
-Swift solutions for [Neetcode's Algorithm Roadmap](https://neetcode.io/roadmap) leetcode problems
+Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](https://neetcode.io/roadmap)
 
 ---
 
