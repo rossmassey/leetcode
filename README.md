@@ -71,7 +71,7 @@ Swift solutions for [Neetcode's Algorithm Roadmap](https://neetcode.io/roadmap) 
 
 | | | Trees | | | |
 | -- | -- | -- | -- | -- | -- | 
-|❌| 226 | Invert Binary Tree  | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) |  | [url](https://leetcode.com/problems/invert-binary-tree/) |
+|✅| 226 | Invert Binary Tree  | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | [src](./Sources/leetcode/226/InvertBinaryTree.swift) | [url](https://leetcode.com/problems/invert-binary-tree/) |
 |❌| 104 | Maximum Depth of Binary Tree  | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) |  | [url](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
 |❌| 543 | Diameter of Binary Tree  | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) |  | [url](https://leetcode.com/problems/diameter-of-binary-tree/) |
 |❌| 110 | Balanced Binary Tree  | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) |  | [url](https://leetcode.com/problems/balanced-binary-tree/) |
