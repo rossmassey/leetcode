@@ -7,14 +7,10 @@
 */
 struct Solution217 {
     static func containsDuplicate(_ nums: [Int]) -> Bool {
-        var seen = Set<Int>()
+        var seen = [Int:Bool]()
         for num in nums {
-            if seen.contains(num) {
-                return true
-            }
-            else {
-                seen.insert(num)
-            }
+            if seen[num] ?? false { return true }
+            seen[num] = true
         }
         return false
     }
