@@ -6,10 +6,10 @@ final class ValidAnagramTests : XCTestCase {
     let isAnagram = Solution242.isAnagram
     
     func testAnagram() {
-        XCTAssertEqual(isAnagram("anagram", "nagaram"), true)
+        XCTAssertTrue(isAnagram("anagram", "nagaram"))
     }
     
     func testNotAnagram() {
-        XCTAssertEqual(isAnagram("rat", "car"), false)
+        XCTAssertFalse(isAnagram("rat", "car"))
     }
 }

@@ -6,19 +6,19 @@ final class ValidParenthesesTests : XCTestCase {
     let isValid = Solution20.isValid
 
     func testOneValidPair() {
-        XCTAssertEqual(isValid("()"), true)
+        XCTAssertTrue(isValid("()"))
     }
 
     func testThreeConsecutiveValidPair() {
-        XCTAssertEqual(isValid("()[]{}"), true)
+        XCTAssertTrue(isValid("()[]{}"))
     }
 
     func testComplicatedPair() {
-        XCTAssertEqual(isValid("([]{()})"), true)
+        XCTAssertTrue(isValid("([]{()})"))
     }
 
     func testInvalidPair() {
-        XCTAssertEqual(isValid("([]"), false)
+        XCTAssertFalse(isValid("([]"))
     }
 }
 

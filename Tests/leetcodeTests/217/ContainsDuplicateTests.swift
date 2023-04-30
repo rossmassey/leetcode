@@ -6,14 +6,14 @@ final class ContainsDuplicateTests : XCTestCase {
     let containsDuplicate = Solution217.containsDuplicate
     
     func testSingleElementArray() {
-        XCTAssertEqual(containsDuplicate([1]), false)
+        XCTAssertFalse(containsDuplicate([1]))
     }
     
     func testArrayWithDuplicate() {
-        XCTAssertEqual(containsDuplicate([1,2,3,1]), true)
+        XCTAssertTrue(containsDuplicate([1,2,3,1]))
     }
     
     func testArrayWithoutDuplicate() {
-        XCTAssertEqual(containsDuplicate([1,2,3,4]), false)
+        XCTAssertFalse(containsDuplicate([1,2,3,4]))
     }
 }

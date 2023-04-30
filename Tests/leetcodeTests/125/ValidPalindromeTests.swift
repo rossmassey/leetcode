@@ -6,14 +6,14 @@ final class ValidPalindromeTests : XCTestCase {
     let isPalindrome = Solution125.isPalindrome
     
     func testPalindrome() {
-        XCTAssertEqual(isPalindrome("A man, a plan, a canal: Panama"), true)
+        XCTAssertTrue(isPalindrome("A man, a plan, a canal: Panama"))
     }
     
     func testNotPalindrome() {
-        XCTAssertEqual(isPalindrome("race a car"), false)
+        XCTAssertFalse(isPalindrome("race a car"))
     }
     
     func testEmptyString() {
-        XCTAssertEqual(isPalindrome(" "), true)
+        XCTAssertTrue(isPalindrome(" "))
     }
 }

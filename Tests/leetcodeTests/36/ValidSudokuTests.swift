@@ -26,10 +26,10 @@ final class ValidSudokuTests : XCTestCase {
         ,[".",".",".",".","8",".",".","7","9"]]
     
     func testValidBoard() {
-        XCTAssertEqual(isValidSudoku(validBoard), true)
+        XCTAssertTrue(isValidSudoku(validBoard))
     }
     
     func testInvalidBoard() {
-        XCTAssertEqual(isValidSudoku(invalidBoard), false)
+        XCTAssertFalse(isValidSudoku(invalidBoard))
     }
 }
