@@ -5,13 +5,9 @@
     Spacetime:  O(n)
 
     `strs[i] < 200` so we can assume all unicode representations of length will be one character (UTF8 context)
-
     unicode provide easy access to underlying value (`Character.asciiValue` only goes up to 127)
-
     e.g. `str.count == 65` => `'A'`
-
     note 0-32 are non-printable control characters (but will still be read in), can add/subtract 33 for debug purpose
-
     when decoding, use first character to determine length of following string, which can consist of any character
 */
 struct Solution271 {
