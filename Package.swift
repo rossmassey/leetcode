@@ -13,9 +13,12 @@ let package = Package(
     targets: [
         .target(
             name: "leetcode",
+            dependencies: ["common"]),
+        .target(
+            name: "common",
             dependencies: []),
         .testTarget(
             name: "leetcodeTests",
-            dependencies: ["leetcode"]),
+            dependencies: ["leetcode", "common"]),
     ]
 )

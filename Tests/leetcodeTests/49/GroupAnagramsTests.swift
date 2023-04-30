@@ -1,4 +1,5 @@
 import XCTest
+import common
 @testable import leetcode
 
 final class GroupAnagramsTests : XCTestCase {
@@ -10,7 +11,7 @@ final class GroupAnagramsTests : XCTestCase {
         let possibleOutput = [["bat"],["nat","tan"],["eat","tea", "ate"]]
         let output = groupAnagrams(input)
         
-        XCTAssertEqual(anyOrderArrayOfArrays(output), anyOrderArrayOfArrays(possibleOutput))
+        XCTAssertEqual(common.anyOrderArrayOfArrays(output), common.anyOrderArrayOfArrays(possibleOutput))
     }
     
     func testNoAnagramsArray() {
@@ -18,7 +19,7 @@ final class GroupAnagramsTests : XCTestCase {
         let possibleOutput = [["card"],["dog"],["eat"]]
         let output = groupAnagrams(input)
         
-        XCTAssertEqual(anyOrderArrayOfArrays(output), anyOrderArrayOfArrays(possibleOutput))
+        XCTAssertEqual(common.anyOrderArrayOfArrays(output), common.anyOrderArrayOfArrays(possibleOutput))
     }
     
     func testEmptyStringArray() {

@@ -1,4 +1,5 @@
 import XCTest
+import common
 @testable import leetcode
 
 final class TopKFrequentElementsTests : XCTestCase {
@@ -9,7 +10,7 @@ final class TopKFrequentElementsTests : XCTestCase {
         let possibleOutput = [1,2]
         let output = topKFrequent([1,1,1,2,2,3],2)
         
-        XCTAssertEqual(anyOrderArray(possibleOutput),anyOrderArray(output))
+        XCTAssertEqual(common.anyOrderArray(possibleOutput),common.anyOrderArray(output))
     }
     
     func testSingleElementArray() {
