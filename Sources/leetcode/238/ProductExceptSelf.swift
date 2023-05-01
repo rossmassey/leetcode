@@ -2,7 +2,7 @@
     238 - Product Except Self - Medium
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution238 {

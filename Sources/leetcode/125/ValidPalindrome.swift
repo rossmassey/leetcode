@@ -2,7 +2,7 @@
     125 - Valid Palindrome - Easy
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution125 {

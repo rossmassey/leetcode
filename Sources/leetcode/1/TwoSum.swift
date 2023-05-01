@@ -2,7 +2,7 @@
     1 - Two Sum - Easy
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution1 {

@@ -4,7 +4,7 @@ import common
  226 - Invert Binary Tree - Easy
  
  Runtime:    O(n)
- Spacetime:  O(n)
+ Space:      O(n)
  
  */
 struct Solution226 {

@@ -2,7 +2,7 @@
     242 - Valid Anagram - Easy
     
     Runtime:    O(n)
-    Spacetime:  O(k), k # of unique characters
+    Space:      O(k), k # of unique characters
     
 */
 struct Solution242 {

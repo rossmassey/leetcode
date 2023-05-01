@@ -2,7 +2,7 @@
     20 - Valid Parentheses - Easy
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution20 {

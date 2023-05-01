@@ -2,7 +2,7 @@
     217 - Contains Duplicate - Easy
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution217 {

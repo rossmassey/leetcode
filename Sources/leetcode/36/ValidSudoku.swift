@@ -2,7 +2,7 @@
     36 - Valid Sudoku - Medium
     
     Runtime:    O(1)
-    Spacetime:  O(1)
+    Space:      O(1)
     
 */
 struct Solution36 {

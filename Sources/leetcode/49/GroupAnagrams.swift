@@ -2,7 +2,7 @@
     49 - Group Anagrams - Medium
     
     Runtime:    O(n*k), k is max length of string
-    Spacetime:  O(n*k)
+    Space:      O(n*k)
     
 */
 struct Solution49 {

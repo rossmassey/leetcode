@@ -2,7 +2,7 @@
     128 - Longest Consecutive Sequence - Medium
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
     
 */
 struct Solution128 {

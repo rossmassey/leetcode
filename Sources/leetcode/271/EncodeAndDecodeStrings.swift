@@ -2,7 +2,7 @@
     271 - Encode And Decode Strings - Medium
     
     Runtime:    O(n)
-    Spacetime:  O(n)
+    Space:      O(n)
 
     `strs[i] < 200` so we can assume all unicode representations of length will be one character (UTF8 context)
     unicode provide easy access to underlying value (`Character.asciiValue` only goes up to 127)

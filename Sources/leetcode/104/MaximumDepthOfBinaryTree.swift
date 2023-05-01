@@ -4,7 +4,7 @@ import common
  104 - Maximum Depth of Binary Tree - Easy
  
  Runtime:    O(n)
- Spacetime:  O(n)
+ Space:      O(n)
  
  */
 struct Solution104 {
