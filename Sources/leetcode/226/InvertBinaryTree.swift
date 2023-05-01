@@ -1,3 +1,5 @@
+import common
+
 /**
  226 - Invert Binary Tree - Easy
  
@@ -5,9 +7,6 @@
  Spacetime:  O(n)
  
  */
-
-import common
-
 struct Solution226 {
     
     typealias TreeNode = common.TreeNode
