@@ -4,6 +4,9 @@
     Runtime:    O(1)
     Space:      O(1)
     
+    alternative for `squareIndex` is to create a struct that conforms to
+    `Hashable` and contains a pair mapped to `row/3` and `col/3`
+    
 */
 struct Solution36 {
     static func isValidSudoku(_ board: [[Character]]) -> Bool {
