@@ -74,7 +74,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 |✅| 226 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Invert Binary Tree | [src](./Sources/leetcode/226/InvertBinaryTree.swift) | [url](https://leetcode.com/problems/invert-binary-tree/) |
 |✅| 104 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Maximum Depth of Binary Tree  | [src](./Sources/leetcode/104/MaximumDepthOfBinaryTree.swift) | [url](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
 |✅| 543 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Diameter of Binary Tree  | [src](./Sources/leetcode/543/DiameterOfBinaryTree.swift) | [url](https://leetcode.com/problems/diameter-of-binary-tree/) |
-|❌| 110 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Balanced Binary Tree  |  | [url](https://leetcode.com/problems/balanced-binary-tree/) |
+|✅| 110 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Balanced Binary Tree  | [src](./Sources/leetcode/110/BalancedBinaryTree.swift) | [url](https://leetcode.com/problems/balanced-binary-tree/) |
 |❌| 100 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Same Tree  |  | [url](https://leetcode.com/problems/same-tree/) |
 |❌| 572 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Subtree of Another Tree  |  | [url](https://leetcode.com/problems/subtree-of-another-tree/) |
 |❌| 235 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Lowest Common Ancestor of a Binary Search Tree  |  | [url](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
