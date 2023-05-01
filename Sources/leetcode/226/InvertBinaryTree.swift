@@ -8,9 +8,6 @@ import common
  
  */
 struct Solution226 {
-    
-    typealias TreeNode = common.TreeNode
-    
     @discardableResult
     static func invertTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else { return nil }

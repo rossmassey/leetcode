@@ -5,7 +5,6 @@ import common
 final class InvertBinaryTreeTests : XCTestCase {
     
     let invertTree = Solution226.invertTree
-    typealias TreeNode = common.TreeNode
 
     func testTree() {
         let input = arrayToTree([2,1,3])

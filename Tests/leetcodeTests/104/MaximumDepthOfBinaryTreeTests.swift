@@ -5,7 +5,6 @@ import common
 final class MaximumDepthOfBinaryTreeTests : XCTestCase {
     
     let maxDepth = Solution104.maxDepth
-    typealias TreeNode = common.TreeNode
 
     func testDepthThreeTree() {
         let input = common.arrayToTree([3,9,20,nil,nil,15,7])
