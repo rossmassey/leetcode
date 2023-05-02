@@ -7,15 +7,15 @@ final class BalancedBinaryTreeTests : XCTestCase {
     let isBalanced = Solution110.isBalanced
 
     func testBalancedTree() {
-        XCTAssertTrue(isBalanced(arrayToTree([3,9,20,nil,nil,15,7])))
+        XCTAssertTrue(isBalanced(TreeNode.binaryTreeFrom([3,9,20,nil,nil,15,7])))
     }
 
     func testUnBalancedTree() {
-        XCTAssertFalse(isBalanced(arrayToTree([1,2,2,3,3,nil,nil,4,4])))
+        XCTAssertFalse(isBalanced(TreeNode.binaryTreeFrom([1,2,2,3,3,nil,nil,4,4])))
     }
 
     func testEmptyTree() {
-        XCTAssertTrue(isBalanced(arrayToTree([])))
+        XCTAssertTrue(isBalanced(TreeNode.binaryTreeFrom([])))
     }
 
 }
