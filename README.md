@@ -145,3 +145,11 @@ Scripts/create-test.swift <solution file>
 ``` 
  
 There is a VSCode Task "Generate Test Case" that can be used when the solution file is opened as well
+
+## Note for VS Code
+
+For new files to be detected by SourceKit-LSP (provided by Swift extension), run `swift build`, and enter the following into the VS Code Command Palette:
+
+```
+Developer: Reload Window
+```
