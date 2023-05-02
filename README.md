@@ -57,7 +57,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 
 | | | | Linked List | | |
 | -- | -- | -- | -- | -- | -- |
-|❌| 206 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Reverse Linked List |  | [url](https://leetcode.com/problems/reverse-linked-list/) |
+|✅| 206 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Reverse Linked List | [src](./Sources/leetcode/206/ReverseLinkedList.swift) | [url](https://leetcode.com/problems/reverse-linked-list/) |
 |❌| 21 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Merge Two Sorted Lists |  | [url](https://leetcode.com/problems/merge-two-sorted-lists/) |
 |❌| 141 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Linked List Cycle |  | [url](https://leetcode.com/problems/linked-list-cycle/) |
 |❌| 143 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Reorder List |  | [url](https://leetcode.com/problems/reorder-list/) |
