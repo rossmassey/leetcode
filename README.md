@@ -38,7 +38,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 
 | | | | Binary Search | | |
 | -- | -- | -- | -- | -- | -- |
-|❌| 704 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Binary Search |  | [url](https://leetcode.com/problems/binary-search/) |
+|✅| 704 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Binary Search | [src](./Sources/leetcode/704/BinarySearch.swift) | [url](https://leetcode.com/problems/binary-search/) |
 |❌| 74 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Search a 2D Matrix |  | [url](https://leetcode.com/problems/search-a-2d-matrix/) |
 |❌| 875 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Koko Eating Bananas |  | [url](https://leetcode.com/problems/koko-eating-bananas/) |
 |❌| 153 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Find Minimum in Rotated Sorted Array |  | [url](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
