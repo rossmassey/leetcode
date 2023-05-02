@@ -20,7 +20,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 | | | | Two Pointers | | |
 | -- | -- | -- | -- | -- | -- |
 |✅| 125 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Valid Palindrome | [src](./Sources/leetcode/125/ValidPalindrome.swift)  | [url](https://leetcode.com/problems/valid-palindrome/) |
-|❌| 167 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Two Sum II Input Array Is Sorted |  | [url](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
+|✅| 167 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Two Sum II Input Array Is Sorted | [src](./Sources/leetcode/167/TwoSum2InputArrayIsSorted.swift) | [url](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
 |❌| 15 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | 3Sum |  | [url](https://leetcode.com/problems/3sum/) |
 |❌| 11 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Container With Most Water |  | [url](https://leetcode.com/problems/container-with-most-water/) |
 |❌| 42 | ![Hard](https://placehold.co/15x15/f03c15/f03c15.png) | Trapping Rain Water |  | [url](https://leetcode.com/problems/trapping-rain-water/) |
