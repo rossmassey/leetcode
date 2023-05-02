@@ -1,0 +1,12 @@
+import XCTest
+@testable import leetcode
+
+final class {basename}Tests : XCTestCase {
+
+    let function = Solution{number}.function
+
+    func test() {
+        XCTAssertTrue(true)
+    }
+
+}

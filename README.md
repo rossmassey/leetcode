@@ -132,8 +132,16 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 
 ## Testing
 
-XCTests can be ran through Xcode or VS Code (with Swift extension), as well as with the following command:
+XCTests can be ran through Xcode or VS Code (with Swift extension), or with:
 
 ```
 swift test
 ```
+
+To generate an `XCTestCase` from template, enter the following command:
+
+```
+Scripts/create-test.swift <solution file>
+``` 
+ 
+There is a VSCode Task "Generate Test Case" that can be used when the solution file is opened as well
