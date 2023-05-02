@@ -48,7 +48,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 
 | | | | Sliding Window | | |
 | -- | -- | -- | -- | -- | -- |
-|❌| 121 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Best Time to Buy And Sell Stock |  | [url](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
+|✅| 121 | ![Easy](https://placehold.co/15x15/71ed47/71ed47.png) | Best Time to Buy And Sell Stock | [src](./Sources/leetcode/121/BestTimeToBuyAndSellStock.swift) | [url](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
 |❌| 3 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Longest Substring Without Repeating Characters |  | [url](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 |❌| 424 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Longest Repeating Character Replacement |  | [url](https://leetcode.com/problems/longest-repeating-character-replacement/) |
 |❌| 567 | ![Medium](https://placehold.co/15x15/fae246/fae246.png) | Permutation In String |  | [url](https://leetcode.com/problems/permutation-in-string/) |
