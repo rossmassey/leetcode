@@ -2,7 +2,7 @@ import XCTest
 import common
 @testable import leetcode
 
-final class diameterOfBinaryTreeTests : XCTestCase {
+final class DiameterOfBinaryTreeTests : XCTestCase {
     
     let diameterOfBinaryTree = Solution543.diameterOfBinaryTree
 
