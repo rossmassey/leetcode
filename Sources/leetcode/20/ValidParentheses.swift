@@ -7,7 +7,7 @@
 */
 struct Solution20 {
     static func isValid(_ s: String) -> Bool {
-        if s.count % 2 != 0 { return false }
+        guard s.count % 2 == 0 else { return false }
 
         let pairs: [Character: Character] = [
             "}" : "{",
