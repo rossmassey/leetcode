@@ -48,4 +48,22 @@ public extension ListNode {
         
         return array
     }
+
+    /**
+        Compares two LinkedLists value wise. Did not implement `Equatable` since 
+        `ListNode` not always used in LinkedList context
+
+        - Returns: A boolean representing whether the LinkedLists matched
+    */
+    static func areLinkedListsEqual(_ list1: ListNode?, _ list2: ListNode?) -> Bool {
+        var pointer1: ListNode? = list1
+        var pointer2: ListNode? = list2
+        
+        while let node1 = pointer1, let node2 = pointer2 {
+            guard node1.val == node2.val else { return false }
+            (pointer1, pointer2) = (node1.next, node2.next)
+        }
+        
+        return pointer1 == nil && pointer2 == nil
+    }
 }
