@@ -27,7 +27,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 | -- | -- | -- | -- | -- | -- |
 |✅| 125 | 🟢 | Valid Palindrome | [src](./Sources/leetcode/125/ValidPalindrome.swift)  | [url](https://leetcode.com/problems/valid-palindrome/) |
 |✅| 167 | 🟨 | Two Sum II Input Array Is Sorted | [src](./Sources/leetcode/167/TwoSum2InputArrayIsSorted.swift) | [url](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) |
-|❌| 15 | 🟨 | 3Sum |  | [url](https://leetcode.com/problems/3sum/) |
+|✅| 15 | 🟨 | 3Sum | [src](./Sources/leetcode/15/ThreeSum.swift) | [url](https://leetcode.com/problems/3sum/) |
 |❌| 11 | 🟨 | Container With Most Water |  | [url](https://leetcode.com/problems/container-with-most-water/) |
 |❌| 42 | 🔺 | Trapping Rain Water |  | [url](https://leetcode.com/problems/trapping-rain-water/) |
 
