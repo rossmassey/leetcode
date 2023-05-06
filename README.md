@@ -36,7 +36,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 |✅| 20 | 🟢 | Valid Parentheses | [src](./Sources/leetcode/20/ValidParentheses.swift)  | [url](https://leetcode.com/problems/valid-parentheses/) |
 |✅| 155 | 🟨 | Min Stack | [src](./Sources/leetcode/155/MinStack.swift) | [url](https://leetcode.com/problems/min-stack/) |
 |✅| 150 | 🟨 | Evaluate Reverse Polish Notation | [src](./Sources/leetcode/150/EvaluateReversePolishNotation.swift) | [url](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
-|❌| 22 | 🟨 | Generate Parentheses |  | [url](https://leetcode.com/problems/generate-parentheses/) |
+|✅| 22 | 🟨 | Generate Parentheses | [src](./Sources/leetcode/22/GenerateParentheses.swift) | [url](https://leetcode.com/problems/generate-parentheses/) |
 |❌| 739 | 🟨 | Daily Temperatures |  | [url](https://leetcode.com/problems/daily-temperatures/) |
 |❌| 853 | 🟨 | Car Fleet |  | [url](https://leetcode.com/problems/car-fleet/) |
 |❌| 84 | 🔺 | Largest Rectangle in Histogram |  | [url](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
