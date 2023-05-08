@@ -6,7 +6,7 @@ final class {basename}Tests : XCTestCase {
     let function = Solution{number}.function
 
     func test() {
-        XCTAssertTrue(true)
+        XCTAssertEqual(true,false)
     }
 
 }
