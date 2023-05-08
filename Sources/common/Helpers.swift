@@ -6,7 +6,7 @@ import Foundation
     - Parameter arr: The input array of type `T` that conforms to `Hashable`.
     - Returns: A set of unique elements from the input array.
  */
-public func anyOrderArray<T: Hashable>(_ arr: [T]) -> Set<T> {
+public func setOfUniqueElementsAnyOrder<T: Hashable>(_ arr: [T]) -> Set<T> {
     return Set(arr)
 }
 
@@ -16,7 +16,7 @@ public func anyOrderArray<T: Hashable>(_ arr: [T]) -> Set<T> {
     - Parameter arr: The input array of arrays of type `T` that conforms to `Hashable`.
     - Returns: A set of unique sets of elements from the input array.
 */
-public func anyOrderArrayOfArrays<T: Hashable>(_ arr: [[T]]) -> Set<Set<T>> {
+public func setOfUniqueElementSetsAnyOrder<T: Hashable>(_ arr: [[T]]) -> Set<Set<T>> {
     let innerSets = arr.map { Set($0) }
     return Set(innerSets)
 }

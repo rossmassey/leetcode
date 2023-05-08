@@ -10,7 +10,8 @@ final class TopKFrequentElementsTests : XCTestCase {
         let possibleOutput = [1,2]
         let output = topKFrequent([1,1,1,2,2,3],2)
         
-        XCTAssertEqual(common.anyOrderArray(possibleOutput),common.anyOrderArray(output))
+        XCTAssertEqual(setOfUniqueElementsAnyOrder(possibleOutput),
+                       setOfUniqueElementsAnyOrder(output))
     }
     
     func testSingleElementArray() {

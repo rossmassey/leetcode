@@ -11,7 +11,8 @@ final class GroupAnagramsTests : XCTestCase {
         let possibleOutput = [["bat"],["nat","tan"],["eat","tea", "ate"]]
         let output = groupAnagrams(input)
         
-        XCTAssertEqual(common.anyOrderArrayOfArrays(output), common.anyOrderArrayOfArrays(possibleOutput))
+        XCTAssertEqual(setOfUniqueElementSetsAnyOrder(output),
+                       setOfUniqueElementSetsAnyOrder(possibleOutput))
     }
     
     func testNoAnagramsArray() {
@@ -19,7 +20,8 @@ final class GroupAnagramsTests : XCTestCase {
         let possibleOutput = [["card"],["dog"],["eat"]]
         let output = groupAnagrams(input)
         
-        XCTAssertEqual(common.anyOrderArrayOfArrays(output), common.anyOrderArrayOfArrays(possibleOutput))
+        XCTAssertEqual(setOfUniqueElementSetsAnyOrder(output),
+                       setOfUniqueElementSetsAnyOrder(possibleOutput))
     }
     
     func testEmptyStringArray() {
