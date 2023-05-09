@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "277D76A4-0BE5-4DF3-8E9D-A0FCC632B5B6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "leetcodeTests",
+        "name" : "leetcodeTests"
+      }
+    }
+  ],
+  "version" : 1
+}
