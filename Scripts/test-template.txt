@@ -3,10 +3,12 @@ import XCTest
 
 final class {basename}Tests : XCTestCase {
 
-    let function = Solution{number}.function
+    let {function} = Solution{number}.{function}
 
     func test() {
-        XCTAssertEqual(true,false)
+        // TODO: implement test for {basename}
+        XCTExpectFailure("Not yet implemented")
+        XCTAssertEqual(true, false)
     }
 
 }
