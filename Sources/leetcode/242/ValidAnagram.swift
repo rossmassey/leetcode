@@ -1,8 +1,13 @@
 /**
     242 - Valid Anagram - Easy
     
-    Runtime:    O(n)
-    Space:      O(k), k # of unique characters
+    Runtime:    `O(n)`
+    Space:      `O(k)`, `k` # of unique characters
+ 
+    `s` and `t` are anagrams if they both have the same characters which
+    occur the same number of times
+ 
+    use a dictionary returned by `characterCounts` which conforms to `Equatable`
     
 */
 struct Solution242 {
@@ -11,6 +16,8 @@ struct Solution242 {
     }
     
     private static func characterCounts(_ s: String) -> [Character:Int] {
-        s.reduce(into: [:]) {$0[$1, default: 0] += 1}
+        s.reduce(into: [:]) { charactersSeen, character in
+            charactersSeen[character, default: 0] += 1
+        }
     }
 }
