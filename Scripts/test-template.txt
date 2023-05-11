@@ -1,12 +1,12 @@
 import XCTest
 @testable import leetcode
 
-final class {basename}Tests : XCTestCase {
+final class {name}Tests : XCTestCase {
 
     let {function} = Solution{number}.{function}
 
     func test() {
-        // TODO: implement test for {basename}
+        // TODO: implement test for {name}
         XCTExpectFailure("Not yet implemented")
         XCTAssertEqual(true, false)
     }
