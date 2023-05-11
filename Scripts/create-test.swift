@@ -36,15 +36,16 @@ func createTest() {
     let inputFilePath = CommandLine.arguments[1]
     let inputFileURL = URL(fileURLWithPath: inputFilePath)
 
-    let number = inputFileURL.deletingLastPathComponent().lastPathComponent
     let basename = inputFileURL.deletingPathExtension().lastPathComponent
+    let components = basename.components(separatedBy: "-")
+    let number = components[0]
+    let numberWithoutLeadingZeros = String(Int(number) ?? 0)
+    let problemName = components.count > 1 ? components[1] : ""
 
     let scriptPath = CommandLine.arguments[0]
     let scriptURL = URL(fileURLWithPath: scriptPath)
     let projectURL = scriptURL.deletingLastPathComponent().deletingLastPathComponent()
-    let outputDirURL = projectURL.appendingPathComponent("Tests/leetcodeTests/\(number)")
-
-    try? FileManager.default.createDirectory(at: outputDirURL, withIntermediateDirectories: true)
+    let outputDirURL = projectURL.appendingPathComponent("Tests/leetcodeTests")
 
     let outputFileURL = outputDirURL.appendingPathComponent("\(basename)Tests.swift")
 
@@ -64,8 +65,8 @@ func createTest() {
     }
 
     let contents = template
-        .replacingOccurrences(of: "{number}", with: number)
-        .replacingOccurrences(of: "{basename}", with: basename)
+        .replacingOccurrences(of: "{number}", with: numberWithoutLeadingZeros)
+        .replacingOccurrences(of: "{basename}", with: problemName)
         .replacingOccurrences(of: "{function}", with: functionName)
 
     do {
