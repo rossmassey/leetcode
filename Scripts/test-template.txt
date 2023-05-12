@@ -7,7 +7,7 @@ final class {name}Tests : XCTestCase {
 
     func test() {
         // TODO: implement test for {name}
-        XCTExpectFailure("Not yet implemented")
+        XCTExpectFailure("Testcase not yet implemented")
         XCTAssertEqual(true, false)
     }
 

@@ -141,7 +141,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 Run the following interactive script to to generate a blank leetcode solution and test case
 
 ```
-Scripts/start-new-problem.swift
+swift Scripts/start-new-problem.swift
 ```
 
 ## Testing

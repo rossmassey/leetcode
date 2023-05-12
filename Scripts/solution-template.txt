@@ -1,14 +1,15 @@
 /**
     {number} - {nameWithSpaces} - {difficulty}
     
-    Runtime:    `O({time})`
-    Space:      `O({space})`
+    Runtime:    `O(<#time#>)`
+    Space:      `O(<#space#>)`
     
     <#Explanation....#>
     
 */
 struct Solution{number} {
     static func {signature} {
-        fatalError("Not yet implemented")
+        // TODO: implement solution for {nameWithSpaces}
+        fatalError("Solution not yet implemented")
     }
 }

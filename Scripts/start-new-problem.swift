@@ -2,18 +2,15 @@
 /**
     Interactive script to generate a blank leetcode solution and test case
  
-    Inputs:
+    Inputs (defaults to Xcode <#placeholders#> when not given):
         - Number: Problem number on leetcode
         - Name: Problem name
-        - Difficulty: Problem difficulty
+        - Difficulty: Problem difficulty (defaults Medium)
         - Function Signature: Function signature used in leetcode
-        - Time: Big-O runtime complexity (enter without the O( ) )
-        - Space: Big-O space complexity (enter without the O( ) )
  
-    Creates these two files:
- 
-    - `Sources/leetcode/####-ProblemName.swift`
-    - `Tests/leetcodeTests/####-ProblemNameTests.swift`
+    Creates these two files: 
+        - `Sources/leetcode/####-ProblemName.swift`
+        - `Tests/leetcodeTests/####-ProblemNameTests.swift`
  
     Expects `solution-template.txt` and `test-template.txt` to be in same
     directory as this script
@@ -21,58 +18,53 @@
 
 import Foundation
 
-// Inputs
-printTitle("Inputs:")
+printTitle("Start New Problem Script")
 
-let number = getInputFor("Number")
-let paddedNumber = String(format: "%04d", Int(number) ?? 0)
+// Constants
+let SOURCES_DIRECTORY = "/../Sources/leetcode/"
+let TESTS_DIRECTORY = "/../Tests/leetcodeTests/"
+
+let SOLUTION_TEMPLATE_FILENAME = "/solution-template.txt"
+let TEST_TEMPLATE_FILENAME = "/test-template.txt"
+
+// User Inputs
+let number = Int(getInputFor("Number")) ?? 0
+let paddedNumber = String(format: "%04d", number)
 
 let nameWithSpaces = getInputFor("Name")
-let capitalized = nameWithSpaces.capitalized
-let name = capitalized.replacingOccurrences(of: " ", with: "")
+let name = nameWithSpaces.capitalized.replacingOccurrences(of: " ", with: "")
 
 let difficulty = getDifficulty()
 
-let rawFunctionSignature = getInputFor("Function Signature")
-let (functionName, functionSignature) = parseSignature(rawFunctionSignature)
-
-let timeComplexity = getInputFor("Time", template: "time")
-let spaceComplexity = getInputFor("Space", template: "space")
+let functionInput = getInputFor("Function Signature")
+let (functionName, functionSignature) = parseSignature(functionInput)
 
 // Paths
 let scriptFilePath = URL(fileURLWithPath: #file)
 let scriptsDirectoryPath = scriptFilePath.deletingLastPathComponent().path
 
-let sourcesPath = scriptsDirectoryPath + "/../Sources/leetcode/"
-let testsPath = scriptsDirectoryPath + "/../Tests/leetcodeTests/"
+// Load templates
+let solutionTemplate = loadFileContent(of: SOLUTION_TEMPLATE_FILENAME, at: scriptsDirectoryPath)
+let testTemplate = loadFileContent(of: TEST_TEMPLATE_FILENAME, at: scriptsDirectoryPath)
 
-let solutionTemplatePath = scriptsDirectoryPath + "/solution-template.txt"
-let testTemplatePath = scriptsDirectoryPath + "/test-template.txt"
-
-// Reading templates
-let solutionTemplate = try String(contentsOfFile: solutionTemplatePath, encoding: .utf8)
-let testTemplate = try String(contentsOfFile: testTemplatePath, encoding: .utf8)
-
-// Filling out templates
+// Fill out templates
 let solutionContent = solutionTemplate
     .replacingOccurrences(of: "{number}", with: number)
     .replacingOccurrences(of: "{nameWithSpaces}", with: nameWithSpaces)
     .replacingOccurrences(of: "{difficulty}", with: difficulty)
     .replacingOccurrences(of: "{signature}", with: functionSignature)
-    .replacingOccurrences(of: "{time}", with: timeComplexity)
-    .replacingOccurrences(of: "{space}", with: spaceComplexity)
 
 let testContent = testTemplate
     .replacingOccurrences(of: "{name}", with: name)
     .replacingOccurrences(of: "{function}", with: functionName)
     .replacingOccurrences(of: "{number}", with: number)
 
-// Writing to files
-let solutionPath = sourcesPath + paddedNumber + "-" + name + ".swift"
-let testPath = testsPath + paddedNumber + "-" + name + "Tests.swift"
+// Write to files
+let solutionFilename = "\(paddedNumber)-\(name).swift"
+let testFilename = "\(paddedNumber)-\(name)Tests.swift"
 
-writeToFile(name: name + ".swift", content: solutionContent, path: solutionPath)
-writeToFile(name: name + "Tests.swift", content: testContent, path: testPath)
+writeToFile(named: solutionFilename, at: scriptsDirectoryPath + SOURCES_DIRECTORY, content: solutionContent)
+writeToFile(named: testFilename, at: scriptsDirectoryPath + TESTS_DIRECTORY, content: testContent)
 
 printTitle("Success!")
 
@@ -81,17 +73,35 @@ printTitle("Success!")
 // Helper Functions
 
 /**
+    Loads content from a file.
+
+    - Parameter path: The path of the file to read from.
+    - Returns: The contents of the file as a String if successful.
+    - Throws: An error if there was a problem reading the file.
+*/
+func loadFileContent(of filename: String, at directory: String) -> String {
+    printTitle("Loading \(filename)...")
+    do {
+        let content = try String(contentsOfFile: directory + filename, encoding: .utf8)
+        return content
+    } catch {
+        print("An error occurred when reading from file: \(error)")
+        exit(1)
+    }
+}
+
+/**
     Writes content to file.
 
     - Parameter name: The filename of output.
     - Parameter content: The contents to write to the file.
     - Parameter path: The path to write the file to.
 */
-func writeToFile(name: String, content: String, path: String) {
-    printTitle("Writing to \(name):")
+func writeToFile(named filename: String, at directory: String, content: String) {
+    printTitle("Writing \(filename):")
     print(content)
     do {
-        try content.write(toFile: path, atomically: false, encoding: .utf8)
+        try content.write(toFile: directory + filename, atomically: false, encoding: .utf8)
     } catch {
         print("An error occurred when writing to file: \(error)")
         exit(1)
@@ -144,7 +154,7 @@ func getInputFor(_ label: String, template: String? = nil) -> String {
 /**
     Reads a line from the standard input, interprets it as a difficulty level, and returns the interpreted level.
 
-    - Returns: A string representing the difficulty level: "Easy", "Medium", or "Hard".
+    - Returns: A string representing the difficulty level: "Easy", "Medium" (default), or "Hard".
 */
 
 func getDifficulty() -> String {
