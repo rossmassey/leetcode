@@ -3,8 +3,8 @@ import common
 /**
     206 - Reverse Linked List - Easy
     
-    Runtime:    O(n)
-    Space:      O(1)
+    Runtime:    `O(n)`
+    Space:      `O(1)`
                             
     use two pointers (`previousNode`, and `pointer`) and temp to hold former
     next node (`nextNode`)

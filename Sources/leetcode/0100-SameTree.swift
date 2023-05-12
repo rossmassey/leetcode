@@ -1,12 +1,12 @@
 import common
 
 /**
- 100 - Same Tree - Easy
+    100 - Same Tree - Easy
  
- Runtime:    O(n)
- Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
 
- Extends `TreeNode` to conform to equatable, using dfs/recursion
+    Extends `TreeNode` to conform to equatable, using dfs/recursion
  
  */
 struct Solution100 {

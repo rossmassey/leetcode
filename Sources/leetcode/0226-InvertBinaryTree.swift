@@ -1,10 +1,10 @@
 import common
 
 /**
- 226 - Invert Binary Tree - Easy
+    226 - Invert Binary Tree - Easy
  
- Runtime:    O(n)
- Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
  
  */
 struct Solution226 {

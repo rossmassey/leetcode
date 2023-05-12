@@ -1,8 +1,8 @@
 /**
     704 - Binary Search - Easy
     
-    Runtime:    O(log n)
-    Space:      O(1)
+    Runtime:    `O(log n)`
+    Space:      `O(1)`
 
     leetcode returns `Int`, but an `Int?` and `nil` would be clearer than -1
 

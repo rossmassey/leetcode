@@ -1,8 +1,8 @@
-/*
-     739 - Daily Temperatures - Medium
+/**
+    739 - Daily Temperatures - Medium
      
-     Runtime:    O(n), each element only added/popped once from stack
-     Space:      O(n)
+    Runtime:    `O(n)`, each element only added/popped once from stack
+    Space:      `O(n)`
      
  */
 struct Solution739 {

@@ -1,8 +1,8 @@
 /**
     155 - Min Stack - Medium
     
-    Runtime:    O(1) for each operation
-    Space:      O(n)
+    Runtime:    `O(1)` for each operation
+    Space:      `O(n)`
                             
     Leetcode problem would be better if `top()` and `getMin()` returned `Int?`
     

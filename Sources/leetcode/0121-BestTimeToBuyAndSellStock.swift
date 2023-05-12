@@ -1,8 +1,8 @@
 /**
- 121 - Best Time To Buy And Sell Stock - Easy
+    121 - Best Time To Buy And Sell Stock - Easy
  
- Runtime:    O(n)
- Space:      O(1)
+    Runtime:    `O(n)`
+    Space:      `O(1)`
  
  */
 struct Solution121 {

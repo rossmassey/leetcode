@@ -1,8 +1,8 @@
 /**
     20 - Valid Parentheses - Easy
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution20 {

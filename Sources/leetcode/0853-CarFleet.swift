@@ -1,8 +1,8 @@
 /**
     853 - Car Fleet - Medium
 
-    Runtime:    O(n log n)
-    Space:      O(n)
+    Runtime:    `O(n log n)`
+    Space:      `O(n)`
 
     sort the combined arrays by descending `position` (first element)
 

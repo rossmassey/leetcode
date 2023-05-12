@@ -3,8 +3,8 @@ import common
 /**
     543 - Diameter of Binary Tree - Easy
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
 
 */
 struct Solution543 {

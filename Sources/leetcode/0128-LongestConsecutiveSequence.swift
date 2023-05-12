@@ -1,8 +1,8 @@
 /**
     128 - Longest Consecutive Sequence - Medium
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution128 {

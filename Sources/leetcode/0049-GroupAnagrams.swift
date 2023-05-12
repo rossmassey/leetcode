@@ -1,8 +1,8 @@
 /**
     49 - Group Anagrams - Medium
     
-    Runtime:    O(n*k), k is max length of string
-    Space:      O(n*k)
+    Runtime:    `O(n*k)`, `k` is max length of string
+    Space:      `O(n*k)`
     
 */
 struct Solution49 {

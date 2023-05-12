@@ -1,11 +1,11 @@
-/*
-     22 - Genereate Parentheses - Medium
+/**
+    22 - Genereate Parentheses - Medium
      
-     Runtime:    O(4^n / sqrt(n))
-     Space:      O(4^n / sqrt(n))
+    Runtime:    `O(4^n / sqrt(n))`
+    Space:      `O(4^n / sqrt(n))`
  
-     valid parentheses string is a Dyck word, so time and space complexity
-     related to growth of Catalan numbers
+    valid parentheses string is a Dyck word, so time and space complexity
+    related to growth of Catalan numbers
  
  */
 struct Solution22 {

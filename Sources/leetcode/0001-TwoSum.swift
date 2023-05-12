@@ -1,8 +1,8 @@
 /**
     1 - Two Sum - Easy
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution1 {

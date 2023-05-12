@@ -1,10 +1,10 @@
 import common
 
 /**
- 104 - Maximum Depth of Binary Tree - Easy
+    104 - Maximum Depth of Binary Tree - Easy
  
- Runtime:    O(n)
- Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
  
  */
 struct Solution104 {

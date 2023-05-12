@@ -3,10 +3,10 @@ import common
 /**
     21 - Merge Two Sorted Lists - Easy
     
-    Runtime:    O(n + m), n is length of `list1`, m is length of `list2`
-    Space:      O(n + m)
+    Runtime:    `O(n + m)`, n is length of `list1`, m is length of `list2`
+    Space:      `O(n + m)`
 
-    an alternative O(1) space iterative apprach can also be used, utilizing two pointers
+    an alternative `O(1)` space iterative apprach can also be used, utilizing two pointers
     
 */
 struct Solution21 {

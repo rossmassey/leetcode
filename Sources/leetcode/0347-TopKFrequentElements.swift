@@ -1,8 +1,8 @@
 /**
     347 - Top K Frequent Elements - Medium
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
 
     after we remove all the empty arrays from intitilzation (flatMap), we know 
     freqBuckets is in order/sorted by frequency (since higher freq stored in higher 

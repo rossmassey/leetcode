@@ -1,8 +1,8 @@
 /**
     217 - Contains Duplicate - Easy
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution217 {

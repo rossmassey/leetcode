@@ -1,8 +1,8 @@
 /**
     238 - Product Except Self - Medium
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution238 {

@@ -1,8 +1,8 @@
 /**
     167 - Two Sum II Input Array Is Sorted - Medium
     
-    Runtime:    O(n)
-    Space:      O(1)
+    Runtime:    `O(n)`
+    Space:      `O(1)`
                             
     since `numbers` array is sorted, we can use two pointers
     

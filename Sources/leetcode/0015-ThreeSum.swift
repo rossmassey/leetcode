@@ -1,8 +1,8 @@
 /**
     15 - 3Sum - Medium
     
-    Runtime:    O(n^2)
-    Space:      O(n)
+    Runtime:    `O(n^2)`
+    Space:      `O(n)`
                             
     sort `nums` array, and for each element use two pointers to scan for two nums
     to right of element that will add up to it

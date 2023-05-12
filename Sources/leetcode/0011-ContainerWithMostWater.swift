@@ -1,8 +1,8 @@
 /**
     11 - Container WIth Most Water - Medium
     
-    Runtime:    O(n)
-    Space:      O(1)
+    Runtime:    `O(n)`
+    Space:      `O(1)`
  
     since `area` limited by shorter height, move that pointer
     

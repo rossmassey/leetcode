@@ -1,8 +1,8 @@
 /**
     125 - Valid Palindrome - Easy
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
     
 */
 struct Solution125 {

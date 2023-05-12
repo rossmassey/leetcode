@@ -1,8 +1,8 @@
 /**
     150 - Evaluate Reverse Polish Notation - Medium
     
-    Runtime:    O(n)
-    Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
  
     assumes `tokens` will be valid input for reverse polish notation
  

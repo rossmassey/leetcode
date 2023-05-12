@@ -1,10 +1,10 @@
 import common
 
 /**
- 226 - Balanced Binary Tree - Easy
+    226 - Balanced Binary Tree - Easy
  
- Runtime:    O(n)
- Space:      O(n)
+    Runtime:    `O(n)`
+    Space:      `O(n)`
  
  */
 struct Solution110 {

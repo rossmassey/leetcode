@@ -1,8 +1,8 @@
 /**
     36 - Valid Sudoku - Medium
     
-    Runtime:    O(1)
-    Space:      O(1)
+    Runtime:    `O(1)`
+    Space:      `O(1)`
     
     alternative for `squareIndex` is to create a struct that conforms to
     `Hashable` and contains a pair mapped to `row/3` and `col/3`

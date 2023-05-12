@@ -1,8 +1,8 @@
 /**
     42 - Trapped Rain Water - Hard
     
-    Runtime:    O(n)
-    Space:      O(1)
+    Runtime:    `O(n)`
+    Space:      `O(1)`
     
     use two variables `leftMax` and `rightMax` to track bounding heights
     use two pointers to only need one pass, and no additional data structure
