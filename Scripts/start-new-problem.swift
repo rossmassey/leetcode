@@ -7,8 +7,8 @@
         - Name: Problem name
         - Difficulty: Problem difficulty
         - Function Signature: Function signature used in leetcode
-        - Time: Big-O runtime complexity
-        - Space: Big-O space complexity
+        - Time: Big-O runtime complexity (enter without the O( ) )
+        - Space: Big-O space complexity (enter without the O( ) )
  
     Creates these two files:
  
@@ -22,6 +22,8 @@
 import Foundation
 
 // Inputs
+printTitle("Inputs:")
+
 let number = getInputFor("Number")
 let paddedNumber = String(format: "%04d", Int(number) ?? 0)
 
@@ -34,8 +36,8 @@ let difficulty = getDifficulty()
 let rawFunctionSignature = getInputFor("Function Signature")
 let (functionName, functionSignature) = parseSignature(rawFunctionSignature)
 
-let timeComplexity = getInputFor("Time Complexity (e.g. n)", template: "time")
-let spaceComplexity = getInputFor("Space Complexity (e.g. n log n)", template: "space")
+let timeComplexity = getInputFor("Time", template: "time")
+let spaceComplexity = getInputFor("Space", template: "space")
 
 // Paths
 let scriptFilePath = URL(fileURLWithPath: #file)
@@ -65,26 +67,53 @@ let testContent = testTemplate
     .replacingOccurrences(of: "{function}", with: functionName)
     .replacingOccurrences(of: "{number}", with: number)
 
-print("\nWriting \"\(name)\"'s solution and test file...")
-
 // Writing to files
 let solutionPath = sourcesPath + paddedNumber + "-" + name + ".swift"
 let testPath = testsPath + paddedNumber + "-" + name + "Tests.swift"
 
-try solutionContent.write(toFile: solutionPath, atomically: false, encoding: .utf8)
-try testContent.write(toFile: testPath, atomically: false, encoding: .utf8)
+writeToFile(name: name + ".swift", content: solutionContent, path: solutionPath)
+writeToFile(name: name + "Tests.swift", content: testContent, path: testPath)
 
-print("\nSuccess!")
+printTitle("Success!")
 
 //---------------------------------------------------------------------------//
 
 // Helper Functions
 
 /**
- Parses a raw function signature into a tuple containing the function name and its clean signature.
+    Writes content to file.
+
+    - Parameter name: The filename of output.
+    - Parameter content: The contents to write to the file.
+    - Parameter path: The path to write the file to.
+*/
+func writeToFile(name: String, content: String, path: String) {
+    printTitle("Writing to \(name):")
+    print(content)
+    do {
+        try content.write(toFile: path, atomically: false, encoding: .utf8)
+    } catch {
+        print("An error occurred when writing to file: \(error)")
+        exit(1)
+    }
+}
+
+/**
+    Prints a formatted title
+
+    - Parameter title: The title to format
+
+*/
+func printTitle(_ title: String) {
+    print("\n---- \(title)\n")
+}
+
+
+/**
+    Parses a raw function signature into a tuple containing the function name and its clean signature.
  
-- Parameter rawSignature: The raw function signature string.
-- Returns: A tuple containing the function name and the clean signature.
+    - Parameter rawSignature: The raw function signature string.
+    - Returns: A tuple containing the function name and the clean signature.
 */
 func parseSignature(_ rawSignature: String) -> (String, String) {
     guard !rawSignature.contains("<#") else { return ("<#f#>", "<#f()#>")}
@@ -100,11 +129,11 @@ func parseSignature(_ rawSignature: String) -> (String, String) {
 }
 
 /**
- Reads a line from the standard input, providing an alternative string if the input is empty.
+    Reads a line from the standard input, providing an alternative string if the input is empty.
  
- - Parameter label: The label to be printed as a prompt for the input.
- - Parameter template: The alternative string to be returned when the input is empty. Defaults to the value of `label` if not provided.
- - Returns: The input string from standard input, or the `template` string enclosed in "<# #>" if the input is empty.
+    - Parameter label: The label to be printed as a prompt for the input.
+    - Parameter template: The alternative string to be returned when the input is empty. Defaults to the value of `label` if not provided.
+    - Returns: The input string from standard input, or the `template` string enclosed in "<# #>" if the input is empty.
 */
 func getInputFor(_ label: String, template: String? = nil) -> String {
     print("\(label): ", terminator: "")
@@ -113,9 +142,9 @@ func getInputFor(_ label: String, template: String? = nil) -> String {
 }
 
 /**
- Reads a line from the standard input, interprets it as a difficulty level, and returns the interpreted level.
+    Reads a line from the standard input, interprets it as a difficulty level, and returns the interpreted level.
 
- - Returns: A string representing the difficulty level: "Easy", "Medium", or "Hard".
+    - Returns: A string representing the difficulty level: "Easy", "Medium", or "Hard".
 */
 
 func getDifficulty() -> String {
