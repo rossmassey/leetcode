@@ -1,11 +1,11 @@
 /**
-    49 - Group Anagrams - Medium
-    
-    Runtime:    `O(n*k)`, `k` is max length of string
-    Space:      `O(n*k)`
-    
-*/
+ 49 - Group Anagrams - Medium
+ */
 struct Solution49 {
+    /**
+     Runtime:    `O(n*k)`, `k` is max length of string
+     Space:      `O(n*k)`
+     */
     static func groupAnagrams(_ strs: [String]) -> [[String]] {
         let asciiStart = Character("a").asciiValue!
         

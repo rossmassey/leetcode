@@ -1,16 +1,19 @@
 /**
-    271 - Encode And Decode Strings - Medium
-    
-    Runtime:    `O(n)`
-    Space:      `O(n)`
-
-    `strs[i] < 200` so we can assume all unicode representations of length will be one character (UTF8 context)
-    unicode provide easy access to underlying value (`Character.asciiValue` only goes up to 127)
-    e.g. `str.count == 65` => `'A'`
-    note 0-32 are non-printable control characters (but will still be read in), can add/subtract 33 for debug purpose
-    when decoding, use first character to determine length of following string, which can consist of any character
-*/
+ 271 - Encode And Decode Strings - Medium
+ */
 struct Solution271 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     
+     `strs[i] < 200` so we can assume all unicode representations of length will be one character (UTF8 context)
+     unicode provide easy access to underlying value (`Character.asciiValue` only goes up to 127)
+     
+     e.g. `str.count == 65` => `'A'`
+     
+     note `0`-`32` are non-printable control characters (but will still be read in), can add/subtract `33` for debug purpose
+     when decoding, use first character to determine length of following string, which can consist of any character
+     */
     static func encode(_ strs: [String]) -> String {
         strs.reduce(into: "") { encodedStr, str in
             let length = UnicodeScalar(str.count)!
@@ -18,6 +21,10 @@ struct Solution271 {
         }
     }
     
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
     static func decode(_ s: String) -> [String] {
         var output = [String]()
         let characters = Array(s)

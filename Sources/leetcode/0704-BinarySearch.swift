@@ -1,16 +1,16 @@
 /**
-    704 - Binary Search - Easy
-    
-    Runtime:    `O(log n)`
-    Space:      `O(1)`
-
-    leetcode returns `Int`, but an `Int?` and `nil` would be clearer than -1
-
-*/
+ 704 - Binary Search - Easy
+ */
 struct Solution704 {
+    /**
+     Runtime:    `O(log n)`
+     Space:      `O(1)`
+     
+     leetcode returns `Int`, but an `Int?` and `nil` would be clearer than -1
+     */
     static func search(_ nums: [Int], _ target: Int) -> Int {
         var start = 0, end = nums.count - 1
-
+        
         while start <= end {
             let middle = (start + end) / 2
             if nums[middle] == target { return middle }

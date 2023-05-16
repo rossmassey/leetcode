@@ -1,11 +1,11 @@
 /**
-    739 - Daily Temperatures - Medium
-     
-    Runtime:    `O(n)`, each element only added/popped once from stack
-    Space:      `O(n)`
-     
+ 739 - Daily Temperatures - Medium
  */
 struct Solution739 {
+    /**
+     Runtime:    `O(n)`, each element only added/popped once from stack
+     Space:      `O(n)`
+     */
     static func dailyTemperatures(_ temperatures: [Int]) -> [Int] {
         var result = [Int](repeating: 0, count: temperatures.count)
         var stack = [(index: Int, temp: Int)]()

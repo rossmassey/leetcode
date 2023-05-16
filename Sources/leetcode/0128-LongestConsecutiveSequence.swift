@@ -1,11 +1,11 @@
 /**
-    128 - Longest Consecutive Sequence - Medium
-    
-    Runtime:    `O(n)`
-    Space:      `O(n)`
-    
-*/
+ 128 - Longest Consecutive Sequence - Medium
+ */
 struct Solution128 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
     static func longestConsecutiveSequence(_ nums: [Int]) -> Int {
         guard nums.count > 0 else { return 0 }
         

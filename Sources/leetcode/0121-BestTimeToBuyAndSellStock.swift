@@ -1,11 +1,11 @@
 /**
-    121 - Best Time To Buy And Sell Stock - Easy
- 
-    Runtime:    `O(n)`
-    Space:      `O(1)`
- 
+ 121 - Best Time To Buy And Sell Stock - Easy
  */
 struct Solution121 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(1)`
+     */
     static func maxProfit(_ prices: [Int]) -> Int {
         var min = Int.max, maxProfit = 0
         for price in prices {

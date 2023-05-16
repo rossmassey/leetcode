@@ -1,16 +1,16 @@
 /**
-    242 - Valid Anagram - Easy
-    
-    Runtime:    `O(n)`
-    Space:      `O(k)`, `k` # of unique characters
- 
-    `s` and `t` are anagrams if they both have the same characters which
-    occur the same number of times
- 
-    use a dictionary returned by `characterCounts` which conforms to `Equatable`
-    
-*/
+ 242 - Valid Anagram - Easy
+ */
 struct Solution242 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(k)`, `k` # of unique characters
+     
+     `s` and `t` are anagrams if they both have the same characters which
+     occur the same number of times
+     
+     use dictionary returned by `characterCounts` which conforms to `Equatable`
+     */
     static func isAnagram(_ s: String, _ t: String) -> Bool {
         characterCounts(s) == characterCounts(t)
     }

@@ -1,16 +1,16 @@
 import common
 
 /**
-    543 - Diameter of Binary Tree - Easy
-    
-    Runtime:    `O(n)`
-    Space:      `O(n)`
-
-*/
+ 543 - Diameter of Binary Tree - Easy
+ */
 struct Solution543 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
     static func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var longestPath = 0
-
+        
         @discardableResult
         func dfs(_ node: TreeNode?) -> Int {
             guard let currentNode = node else { return 0 }

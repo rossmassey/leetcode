@@ -1,14 +1,14 @@
 /**
-    22 - Genereate Parentheses - Medium
-     
-    Runtime:    `O(4^n / sqrt(n))`
-    Space:      `O(4^n / sqrt(n))`
- 
-    valid parentheses string is a Dyck word, so time and space complexity
-    related to growth of Catalan numbers
- 
+ 22 - Genereate Parentheses - Medium
  */
 struct Solution22 {
+    /**
+     Runtime:    `O(4^n / sqrt(n))`
+     Space:      `O(4^n / sqrt(n))`
+     
+     valid parentheses string is a Dyck word, so time and space complexity
+     related to growth of Catalan numbers
+     */
     static func generateParenthesis(_ n: Int) -> [String] {
         
         var result = [String]()
@@ -32,11 +32,15 @@ struct Solution22 {
         return result
     }
     
+    /**
+     Runtime:    `O(4^n / sqrt(n))`
+     Space:      `O(4^n / sqrt(n))`
+     */
     static func generateParenthesisDynamicProgramming(_ n: Int) -> [String] {
         
         // base case, return array with an empty string
         guard n > 0 else { return [""] }
-
+        
         // iterate through numbers from 0 to n-1 and use flatMap to combine results
         return (0..<n).flatMap { i in
             // for each number i, generate valid parentheses for i pairs (left side)

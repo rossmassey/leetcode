@@ -1,11 +1,11 @@
 /**
-    1 - Two Sum - Easy
-    
-    Runtime:    `O(n)`
-    Space:      `O(n)`
-    
-*/
+ 1 - Two Sum - Easy
+ */
 struct Solution1 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
     static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         guard nums.count != 2 else { return [0,1] }
         

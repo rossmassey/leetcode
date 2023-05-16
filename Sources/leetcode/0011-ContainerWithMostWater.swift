@@ -1,13 +1,15 @@
 /**
-    11 - Container WIth Most Water - Medium
-    
-    Runtime:    `O(n)`
-    Space:      `O(1)`
- 
-    since `area` limited by shorter height, move that pointer
-    
-*/
+ 11 - Container WIth Most Water - Medium
+ */
 struct Solution11 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(1)`
+     
+     use two pointers `left` and `right` to scan the input
+     
+     since `area` limited by shorter height, move that pointer
+     */
     static func maxArea(_ height: [Int]) -> Int {
         var maxArea = 0
         var (left, right) = (0, height.count - 1)
@@ -23,4 +25,3 @@ struct Solution11 {
         return maxArea
     }
 }
-

@@ -1,13 +1,13 @@
 import common
 
 /**
-    226 - Invert Binary Tree - Easy
- 
-    Runtime:    `O(n)`
-    Space:      `O(n)`
- 
+ 226 - Invert Binary Tree - Easy
  */
 struct Solution226 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
     @discardableResult
     static func invertTree(_ root: TreeNode?) -> TreeNode? {
         guard let root = root else { return nil }

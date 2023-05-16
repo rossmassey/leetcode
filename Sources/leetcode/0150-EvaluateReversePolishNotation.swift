@@ -1,13 +1,13 @@
 /**
-    150 - Evaluate Reverse Polish Notation - Medium
-    
-    Runtime:    `O(n)`
-    Space:      `O(n)`
- 
-    assumes `tokens` will be valid input for reverse polish notation
- 
-*/
+ 150 - Evaluate Reverse Polish Notation - Medium
+ */
 struct Solution150 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     
+     assumes `tokens` will be valid input for reverse polish notation
+     */
     static func evalRPN(_ tokens: [String]) -> Int {
         
         let operations: [String : (Int, Int) -> (Int)] = [
