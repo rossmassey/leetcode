@@ -49,7 +49,7 @@ let testTemplate = loadFileContent(of: TEST_TEMPLATE_FILENAME, at: scriptsDirect
 
 // Fill out templates
 let solutionContent = solutionTemplate
-    .replacingOccurrences(of: "{number}", with: number)
+    .replacingOccurrences(of: "{number}", with: String(number))
     .replacingOccurrences(of: "{nameWithSpaces}", with: nameWithSpaces)
     .replacingOccurrences(of: "{difficulty}", with: difficulty)
     .replacingOccurrences(of: "{signature}", with: functionSignature)
@@ -57,7 +57,7 @@ let solutionContent = solutionTemplate
 let testContent = testTemplate
     .replacingOccurrences(of: "{name}", with: name)
     .replacingOccurrences(of: "{function}", with: functionName)
-    .replacingOccurrences(of: "{number}", with: number)
+    .replacingOccurrences(of: "{number}", with: String(number))
 
 // Write to files
 let solutionFilename = "\(paddedNumber)-\(name).swift"
