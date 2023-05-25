@@ -2,6 +2,7 @@
  {number} - {nameWithSpaces} - {difficulty}
 */
 struct Solution{number} {
+
     /**
      Runtime:    `O(<#time#>)`
      Space:      `O(<#space#>)`
