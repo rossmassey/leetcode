@@ -57,4 +57,37 @@ struct Solution84 {
 
         return largestArea
     }
+    
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+    
+     an additional iteration is added to the main for-loop that considers a
+     `currentHeight` of `0` once we have iterated through heights (end of
+     `heights` was at `heights.count - 1`).
+     
+     this is guaranteed to be smaller than any `height` on the stack, so it will
+     cause all remaining heights to be popped from the `stack` and their areas
+     calculated
+     */
+    static func largestRectangleAreaCondensed(_ heights: [Int]) -> Int {
+        var largestArea = 0
+
+        var stack = [(start: Int, height: Int)]()
+
+        for currentIndex in 0...heights.count {
+            let currentHeight = (currentIndex == heights.count ? 0 : heights[currentIndex])
+            var startOfCurrentHeight = currentIndex
+
+            while let top = stack.last, top.height >= currentHeight {
+                let edge = stack.removeLast()
+                let width = currentIndex - edge.start
+                largestArea = max(largestArea, edge.height * width)
+                startOfCurrentHeight = edge.start
+            }
+            stack.append((startOfCurrentHeight, currentHeight))
+        }
+        
+        return largestArea
+    }
 }
