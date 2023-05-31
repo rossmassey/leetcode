@@ -49,7 +49,7 @@ Swift solutions for leetcode problems, following [Neetcode's Algorithm Roadmap](
 |✅| 875 | 🟨 | Koko Eating Bananas                 | [src](./Sources/leetcode/0875-KokoEatingBananas.swift)  | [url](https://leetcode.com/problems/koko-eating-bananas/) |
 |✅| 153 | 🟨 | Find Minimum in Rotated Sorted Array | [src](./Sources/leetcode/0153-FindMinimumInRotatedSortedArray.swift) | [url](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |
 |✅| 33 | 🟨 | Search in Rotated Sorted Array       | [src](./Sources/leetcode/0033-SearchInRotatedSortedArray.swift) | [url](https://leetcode.com/problems/search-in-rotated-sorted-array/) |
-|❌| 981 | 🟨 | Time Based Key-Value Store          |  | [url](https://leetcode.com/problems/time-based-key-value-store/) |
+|✅| 981 | 🟨 | Time Based Key-Value Store          | [src](./Sources/leetcode/0981-TimeBasedKeyValueStore.swift) | [url](https://leetcode.com/problems/time-based-key-value-store/) |
 |❌| 4 | 🔺 | Median of Two Sorted Arrays           |  | [url](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
 
 | | | | Sliding Window | | |
