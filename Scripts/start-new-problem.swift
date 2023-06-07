@@ -60,8 +60,8 @@ let testContent = testTemplate
     .replacingOccurrences(of: "{number}", with: String(number))
 
 // Write to files
-let solutionFilename = "\(paddedNumber)-\(name).swift"
-let testFilename = "\(paddedNumber)-\(name)Tests.swift"
+let solutionFilename = "\(paddedNumber)_\(name).swift"
+let testFilename = "\(paddedNumber)_\(name)Tests.swift"
 
 writeToFile(named: solutionFilename, at: scriptsDirectoryPath + SOURCES_DIRECTORY, content: solutionContent)
 writeToFile(named: testFilename, at: scriptsDirectoryPath + TESTS_DIRECTORY, content: testContent)
