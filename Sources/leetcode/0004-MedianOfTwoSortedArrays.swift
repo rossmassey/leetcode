@@ -41,31 +41,43 @@ struct Solution4 {
             let shortDivider = (left + right) / 2
             let longDivider = halfCount - shortDivider
             
-            let (shortLeft, shortRight) = getElementsAdjacentToDivider(shortDivider, in: short)
-            let (longLeft, longRight) = getElementsAdjacentToDivider(longDivider, in: long)
+            let (shortBefore, shortAfter) = getAdjacentValues(to: shortDivider, in: short)
+            let (longBefore, longAfter) = getAdjacentValues(to: longDivider, in: long)
             
-            if shortLeft > longRight {
+            if shortBefore > longAfter {
                 right = shortDivider - 1
-            } else if longLeft > shortRight {
+            } else if longBefore > shortAfter {
                 left = shortDivider + 1
 
             } else {
                 if mergedCountIsEven {
-                    return Double(max(shortLeft, longLeft) + min(shortRight, longRight)) / 2.0
+                    return Double(max(shortBefore, longBefore)
+                                + min(shortAfter, longAfter)) / 2
                 } else {
-                    return Double(max(shortLeft, longLeft))
+                    return Double(max(shortBefore, longBefore))
                 }
             }
         }
         
         return -1
     }
-    
-    static func getElementsAdjacentToDivider(_ divider: Int, in array: [Int]) -> (Int, Int) {
-        let left = divider > 0 ? array[divider - 1] : Int.min
-        let right = divider < array.count ? array[divider] : Int.max
+
+    /*
+     *  ex)
+     *   divider value:       1
+     *   array:             x | x   x   x       before: value at 0
+     *   index:             0   1   2   3       after:  value at 1
+     *
+     *  ex)
+     *   divider value:   0
+     *   array:           | x   x   x   x       before: Int.min
+     *   index:             0   1   2   3       after:  value at 0
+     */
+    static func getAdjacentValues(to divider: Int, in array: [Int]) -> (Int, Int) {
+        let before = divider > 0 ? array[divider - 1] : Int.min
+        let after = divider < array.count ? array[divider] : Int.max
         
-        return (left, right)
+        return (before, after)
     }
     
 }
