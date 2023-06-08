@@ -3,7 +3,7 @@ import XCTest
 
 final class _0217_ContainsDuplicateTests : XCTestCase {
     
-    let containsDuplicate = Solution217.containsDuplicate
+    let containsDuplicate = Solution_0217.containsDuplicate
     
     func testSingleElementArray() {
         XCTAssertFalse(containsDuplicate([1]))

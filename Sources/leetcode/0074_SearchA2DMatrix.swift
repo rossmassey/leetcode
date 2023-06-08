@@ -1,17 +1,19 @@
 /**
  74 - Search a 2D Matrix - Medium
+ 
+ > `m` is # rows, `n` is # cols
 */
-struct Solution74 {
+public struct Solution_0074 {
     
     /**
-     Runtime:    `O(log m + log n)`, `m` is # rows, `n` is # cols
+     Runtime:    `O(log m + log n)`
      Space:      `O(1)`
     
      binary search approach, just treat the 2D array as a 1D array
      
      note: `O(log m + log n) = O(log (m * n))`
     */
-    static func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
+    public static func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
         let colCount = matrix.count
         let rowCount = matrix[0].count
 
@@ -45,7 +47,7 @@ struct Solution74 {
     
     
     /**
-     Runtime:    `O(m + n)`, `m` is # rows, `n` is # cols
+     Runtime:    `O(m + n)`
      Space:      `O(1)`
     
      unlike binary search (a dviide and conquer algorithm), this is specifically for this type of 2D sorted array
@@ -58,7 +60,7 @@ struct Solution74 {
 
      alternative start location is top right
     */
-    static func searchMatrix2DAlgorithm(_ matrix: [[Int]], _ target: Int) -> Bool {
+    public static func searchMatrix2DAlgorithm(_ matrix: [[Int]], _ target: Int) -> Bool {
         let rowCount = matrix.count
         let colCount = matrix[0].count
 

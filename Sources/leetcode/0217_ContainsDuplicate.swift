@@ -1,12 +1,12 @@
 /**
  217 - Contains Duplicate - Easy
  */
-struct Solution217 {
+public struct Solution_0217 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
      */
-    static func containsDuplicate(_ nums: [Int]) -> Bool {
+    public static func containsDuplicate(_ nums: [Int]) -> Bool {
         var seen = [Int:Bool]()
         for num in nums {
             if seen[num] ?? false { return true }

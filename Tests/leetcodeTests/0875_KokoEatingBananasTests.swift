@@ -3,7 +3,7 @@ import XCTest
 
 final class _0875_KokoEatingBananasTests : XCTestCase {
 
-    let minEatingSpeed = Solution875.minEatingSpeed
+    let minEatingSpeed = Solution_0875.minEatingSpeed
 
     func testEightHours() {
         XCTAssertEqual(minEatingSpeed([3,6,7,11], 8), 4)

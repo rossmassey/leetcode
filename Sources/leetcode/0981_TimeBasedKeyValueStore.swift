@@ -1,7 +1,7 @@
 /**
  981 - Time Based Key Value Store - Medium
 */
-class Solution981 {
+public class Solution_0981 {
     
     var timeMap: [String : [(value: String, time: Int)]]
 

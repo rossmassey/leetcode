@@ -2,13 +2,15 @@ import common
 
 /**
  21 - Merge Two Sorted Lists - Easy
+ 
+ > `n` is length of `list1`, `m` is length of `list2`
  */
-struct Solution21 {
+public struct Solution_0021 {
     /**
-     Runtime:    `O(n + m)`, n is length of `list1`, m is length of `list2`
+     Runtime:    `O(n + m)`
      Space:      `O(n + m)`
      */
-    static func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    public static func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         
         guard let node1 = list1 else { return list2 }
         guard let node2 = list2 else { return list1 }
@@ -23,12 +25,12 @@ struct Solution21 {
     }
     
     /**
-     Runtime:    `O(n + m)`, n is length of `list1`, m is length of `list2`
+     Runtime:    `O(n + m)`
      Space:      `O(1)`
      
      utilizing two pointers
      */
-    static func mergeTwoListsIteratively(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+    public static func mergeTwoListsIteratively(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         
         let tempNode = ListNode()
         var tail: ListNode = tempNode

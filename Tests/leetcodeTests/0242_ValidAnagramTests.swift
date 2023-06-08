@@ -3,7 +3,7 @@ import XCTest
 
 final class _0242_ValidAnagramTests : XCTestCase {
     
-    let isAnagram = Solution242.isAnagram
+    let isAnagram = Solution_0242.isAnagram
     
     func testAnagram() {
         XCTAssertTrue(isAnagram("anagram", "nagaram"))

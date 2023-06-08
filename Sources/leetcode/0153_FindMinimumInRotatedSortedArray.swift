@@ -1,7 +1,7 @@
 /**
  153 - Find Minimum in Rotated Sorted Array - Medium
 */
-struct Solution153 {
+public struct Solution_0153 {
 
     /**
      Runtime:    `O(log n)`
@@ -37,7 +37,7 @@ struct Solution153 {
      move window to left of `mid`
      (start of this partition/min somewhere in `[left ... mid - 1]`)
     */
-    static func findMin(_ nums: [Int]) -> Int {
+    public static func findMin(_ nums: [Int]) -> Int {
         var currentMin = nums[0]
         var left = 0, right = nums.count - 1
 

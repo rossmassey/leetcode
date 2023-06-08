@@ -1,7 +1,7 @@
 /**
  36 - Valid Sudoku - Medium
  */
-struct Solution36 {
+public struct Solution_0036 {
     /**
      Runtime:    `O(1)`
      Space:      `O(1)`
@@ -9,7 +9,7 @@ struct Solution36 {
      alternative for `squareIndex` is to create a struct that conforms to
      `Hashable` and contains a pair mapped to `row/3` and `col/3`
      */
-    static func isValidSudoku(_ board: [[Character]]) -> Bool {
+    public static func isValidSudoku(_ board: [[Character]]) -> Bool {
         var cols = [Int:Set<Character>]()
         var rows = [Int:Set<Character>]()
         var squares = [Int:Set<Character>]()

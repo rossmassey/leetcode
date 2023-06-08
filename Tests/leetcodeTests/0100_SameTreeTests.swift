@@ -4,7 +4,7 @@ import common
 
 final class _0100_SameTreeTests : XCTestCase {
 
-    let isSameTree = Solution100.isSameTree
+    let isSameTree = Solution_0100.isSameTree
 
     func testSameTree() {
         let p = TreeNode.binaryTreeFrom([1,2,3])

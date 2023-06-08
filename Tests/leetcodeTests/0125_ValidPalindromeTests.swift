@@ -3,7 +3,7 @@ import XCTest
 
 final class _0125_ValidPalindromeTests : XCTestCase {
     
-    let isPalindrome = Solution125.isPalindrome
+    let isPalindrome = Solution_0125.isPalindrome
     
     func testPalindrome() {
         XCTAssertTrue(isPalindrome("A man, a plan, a canal: Panama"))

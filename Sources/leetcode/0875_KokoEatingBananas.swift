@@ -2,10 +2,12 @@ import Foundation
 
 /**
  875 - Koko Eating Bananas - Medium
+ 
+ `n` is # piles, `m` is max element in pile
 */
-struct Solution875 {
+public struct Solution_0875 {
     /**
-     Runtime:    `O(n * log m)`, `n` is # piles, `m` is max element in pile
+     Runtime:    `O(n log m)`
      Space:      `O(1)`
     
      applys binary search.
@@ -20,7 +22,7 @@ struct Solution875 {
      once `left >= right` we are at minimum speed, so return `left`
 
     */
-    static func minEatingSpeed(_ piles: [Int], _ H: Int) -> Int {
+    public static func minEatingSpeed(_ piles: [Int], _ H: Int) -> Int {
         var left = 1
         var right = piles.max()!
 

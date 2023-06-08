@@ -3,7 +3,7 @@ import XCTest
 
 final class _0704_BinarySearchTests : XCTestCase {
     
-    let search = Solution704.search
+    let search = Solution_0704.search
 
     func testEmptyArray() {
         XCTAssertEqual(search([],1), -1)

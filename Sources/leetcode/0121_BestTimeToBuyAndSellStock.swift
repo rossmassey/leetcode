@@ -1,12 +1,12 @@
 /**
  121 - Best Time To Buy And Sell Stock - Easy
  */
-struct Solution121 {
+public struct Solution_0121 {
     /**
      Runtime:    `O(n)`
      Space:      `O(1)`
      */
-    static func maxProfit(_ prices: [Int]) -> Int {
+    public static func maxProfit(_ prices: [Int]) -> Int {
         var min = Int.max, maxProfit = 0
         for price in prices {
             if price < min { min = price }

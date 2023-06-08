@@ -1,7 +1,7 @@
 /**
  347 - Top K Frequent Elements - Medium
  */
-struct Solution347 {
+public struct Solution_0347 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
@@ -11,7 +11,7 @@ struct Solution347 {
      index at end of array, lower freq in lower index), and can just grab the numbers
      associated with highest k frequencies
      */
-    static func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
+    public static func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
         var freqBuckets: [[Int]] = Array(repeating: [], count: nums.count + 1)
         let counts = nums.reduce(into: [:]) { $0[$1, default: 0] += 1 }
         for (num, freq) in counts.map({( $0.key, $0.value )}) {

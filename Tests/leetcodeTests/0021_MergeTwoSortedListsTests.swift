@@ -4,7 +4,7 @@ import common
 
 final class _0021_MergeTwoSortedListsTests : XCTestCase {
 
-    let mergeTwoLists = Solution21.mergeTwoLists
+    let mergeTwoLists = Solution_0021.mergeTwoLists
 
     func testMergeTwoLists() {
         let list1 = ListNode.linkedListFrom([1,2,4])

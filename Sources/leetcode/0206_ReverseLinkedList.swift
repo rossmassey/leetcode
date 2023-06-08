@@ -3,7 +3,7 @@ import common
 /**
  206 - Reverse Linked List - Easy
  */
-struct Solution206 {
+public struct Solution_0206 {
     /**
      Runtime:    `O(n)`
      Space:      `O(1)`
@@ -11,7 +11,7 @@ struct Solution206 {
      use two pointers (`previousNode`, and `pointer`) and temp to hold former
      next node (`nextNode`)
      */
-    static func reverseList(_ head: ListNode?) -> ListNode? {
+    public static func reverseList(_ head: ListNode?) -> ListNode? {
         
         var previousNode = ListNode?.none
         var pointer = head

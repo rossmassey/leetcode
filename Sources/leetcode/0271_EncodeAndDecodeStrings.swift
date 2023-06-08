@@ -1,7 +1,7 @@
 /**
  271 - Encode And Decode Strings - Medium
  */
-struct Solution271 {
+public struct Solution_0271 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
@@ -14,7 +14,7 @@ struct Solution271 {
      note `0`-`32` are non-printable control characters (but will still be read in), can add/subtract `33` for debug purpose
      when decoding, use first character to determine length of following string, which can consist of any character
      */
-    static func encode(_ strs: [String]) -> String {
+    public static func encode(_ strs: [String]) -> String {
         strs.reduce(into: "") { encodedStr, str in
             let length = UnicodeScalar(str.count)!
             encodedStr.append("\(length)\(str)")
@@ -25,7 +25,7 @@ struct Solution271 {
      Runtime:    `O(n)`
      Space:      `O(n)`
      */
-    static func decode(_ s: String) -> [String] {
+    public static func decode(_ s: String) -> [String] {
         var output = [String]()
         let characters = Array(s)
         

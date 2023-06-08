@@ -3,7 +3,7 @@ import XCTest
 
 final class _0004_MedianOfTwoSortedArraysTests : XCTestCase {
 
-    let findMedianSortedArrays = Solution4.findMedianSortedArrays
+    let findMedianSortedArrays = Solution_0004.findMedianSortedArrays
 
     func testOdd() {
         XCTAssertEqual(findMedianSortedArrays([1,3],[2]), 2)

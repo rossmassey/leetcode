@@ -1,7 +1,7 @@
 /**
  84 - Largest Rectangle in Histogram - Hard
 */
-struct Solution84 {
+public struct Solution_0084 {
 
     /**
      Runtime:    `O(n)`
@@ -23,7 +23,7 @@ struct Solution84 {
 
      This process ensures all possible rectangle areas under the histogram are checked, and the largest one is found.
     */
-    static func largestRectangleArea(_ heights: [Int]) -> Int {
+    public static func largestRectangleArea(_ heights: [Int]) -> Int {
         var largestArea = 0
 
         // "left edge" of rectangle stored in stack
@@ -70,7 +70,7 @@ struct Solution84 {
      cause all remaining heights to be popped from the `stack` and their areas
      calculated
      */
-    static func largestRectangleAreaCondensed(_ heights: [Int]) -> Int {
+    public static func largestRectangleAreaCondensed(_ heights: [Int]) -> Int {
         var largestArea = 0
 
         var stack = [(start: Int, height: Int)]()

@@ -1,7 +1,7 @@
 /**
  20 - Valid Parentheses - Easy
  */
-struct Solution20 {
+public struct Solution_0020 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
@@ -16,7 +16,7 @@ struct Solution20 {
      
      returns true if stack empty after all characters processed
      */
-    static func isValid(_ s: String) -> Bool {
+    public static func isValid(_ s: String) -> Bool {
         guard s.count % 2 == 0 else { return false }
         
         let pairs: [Character: Character] = [

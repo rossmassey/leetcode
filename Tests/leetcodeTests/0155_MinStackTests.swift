@@ -3,7 +3,7 @@ import XCTest
 
 final class _0155_MinStackTests : XCTestCase {
     
-    typealias MinStack = Solution155
+    typealias MinStack = Solution_0155
 
     func testMinStack() {
         let minStack = MinStack()

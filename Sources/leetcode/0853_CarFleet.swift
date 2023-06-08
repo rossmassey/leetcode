@@ -1,7 +1,7 @@
 /**
  853 - Car Fleet - Medium
  */
-struct Solution853 {
+public struct Solution_0853 {
     /**
      Runtime:    `O(n log n)`
      Space:      `O(n)`
@@ -16,7 +16,7 @@ struct Solution853 {
      at the end, the `stack` will contain the distinct fleets, each representing
      the arrival times of cars that cannot catch up with each other
      */
-    static func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
+    public static func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
         
         var stack = [Double]()
         

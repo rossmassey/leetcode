@@ -1,12 +1,14 @@
 /**
  49 - Group Anagrams - Medium
+ 
+ >  `k` is max length of string
  */
-struct Solution49 {
+public struct Solution_0049 {
     /**
-     Runtime:    `O(n*k)`, `k` is max length of string
+     Runtime:    `O(n*k)`
      Space:      `O(n*k)`
      */
-    static func groupAnagrams(_ strs: [String]) -> [[String]] {
+    public static func groupAnagrams(_ strs: [String]) -> [[String]] {
         let asciiStart = Character("a").asciiValue!
         
         var answer = [[Int]:[String]]()

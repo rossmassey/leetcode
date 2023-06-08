@@ -1,7 +1,7 @@
 /**
  15 - 3Sum - Medium
  */
-struct Solution15 {
+public struct Solution_0015 {
     /**
      Runtime:    `O(n^2)`
      Space:      `O(n)`
@@ -11,7 +11,7 @@ struct Solution15 {
      
      using a `Set` to handle duplicates is more readable
      */
-    static func threeSum(_ nums: [Int]) -> [[Int]] {
+    public static func threeSum(_ nums: [Int]) -> [[Int]] {
         
         var result = Set<[Int]>()
         let sortedNums = nums.sorted()
@@ -44,9 +44,8 @@ struct Solution15 {
      
      sort `nums` array, and for each element use two pointers to scan for two nums
      to right of element that will add up to it
-     
      */
-    static func threeSumCheckDuplicatesManually(_ nums: [Int]) -> [[Int]] {
+    public static func threeSumCheckDuplicatesManually(_ nums: [Int]) -> [[Int]] {
         
         var result = [[Int]]()
         let sortedNums = nums.sorted()

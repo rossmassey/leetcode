@@ -1,7 +1,7 @@
 /**
  42 - Trapped Rain Water - Hard
  */
-struct Solution42 {
+public struct Solution_0042 {
     /**
      Runtime:    `O(n)`
      Space:      `O(1)`
@@ -13,7 +13,7 @@ struct Solution42 {
      use tallest height found on lesser height's side to determine water amount
      subtract the current height, since water only on top of it
      */
-    static func trap(_ height: [Int]) -> Int {
+    public static func trap(_ height: [Int]) -> Int {
         
         var left = 0
         var right = height.count - 1

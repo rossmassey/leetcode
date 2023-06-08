@@ -3,7 +3,7 @@ import XCTest
 
 final class _0033_SearchInRotatedSortedArrayTests : XCTestCase {
 
-    let search = Solution33.search
+    let search = Solution_0033.search
 
     func testPresent() {
         XCTAssertEqual(search([4,5,6,7,0,1,2], 0), 4)

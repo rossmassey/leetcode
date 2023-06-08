@@ -4,7 +4,7 @@ import common
 
 final class _0015_ThreeSumTests : XCTestCase {
 
-    let threeSum = Solution15.threeSum
+    let threeSum = Solution_0015.threeSum
     
     func testOne() {
         let expectedOutput = setOfUniqueElementsAnyOrder([[-1,-1,2],[-1,0,1]])
