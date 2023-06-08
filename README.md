@@ -4,7 +4,9 @@
 
 Solutions to leetcode problems implemented in **[Swift](https://www.swift.org/)**
 
-## Documentation
+![swift test](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml/badge.svg)
+
+  ## Documentation
 
 Documentation is generated from the markdown in the solution files, with the DocC documentation compiler
 
