@@ -31,7 +31,7 @@ Run the following interactive script to to generate a blank leetcode solution an
 ```
 swift Scripts/start-new-problem.swift
 ```
-## Documentation
+## Generating Documentation
 
 To generate the static documentation in `/docs`, from the repo folder run:
 
@@ -44,3 +44,6 @@ To preview the web version, run:
 ```
 bash Scripts/preview-docs.sh
 ```
+
+[GitHub Pages](https://pages.github.com/) is used to host the static content generated in the `/docs` folder from the `docs` branch (to avoid GitHub action running everytime commit pushed to `main`)
+
