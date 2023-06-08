@@ -3,7 +3,7 @@ import XCTest
 
 final class _0853_CarFleetTests : XCTestCase {
 
-    let carFleet = Solution853.carFleet
+    let carFleet = Solution_0853.carFleet
 
     func testOneCar() {
         XCTAssertEqual(carFleet(12, [10,8,0,5,3], [2,4,1,1,3]), 3)

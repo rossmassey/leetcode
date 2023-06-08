@@ -4,7 +4,7 @@ import common
 
 final class _0226_InvertBinaryTreeTests : XCTestCase {
     
-    let invertTree = Solution226.invertTree
+    let invertTree = Solution_0226.invertTree
 
     func testTree() {
         let input = TreeNode.binaryTreeFrom([2,1,3])

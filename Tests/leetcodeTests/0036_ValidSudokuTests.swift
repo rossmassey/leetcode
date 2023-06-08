@@ -3,7 +3,7 @@ import XCTest
 
 final class _0036_alidSudokuTests : XCTestCase {
     
-    let isValidSudoku = Solution36.isValidSudoku
+    let isValidSudoku = Solution_0036.isValidSudoku
     
     let validBoard: [[Character]] = [["5","3",".",".","7",".",".",".","."]
         ,["6",".",".","1","9","5",".",".","."]

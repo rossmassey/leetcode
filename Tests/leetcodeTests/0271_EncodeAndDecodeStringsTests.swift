@@ -3,8 +3,8 @@ import XCTest
 
 final class _0271_EncodeAndDecodeStringsTests : XCTestCase {
     
-    let encode = Solution271.encode
-    let decode = Solution271.decode
+    let encode = Solution_0271.encode
+    let decode = Solution_0271.decode
     
     func testEmptyString() {
         let input = [""]

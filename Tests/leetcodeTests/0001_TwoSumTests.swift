@@ -4,7 +4,7 @@ import common
 
 final class _0001_TwoSumTests : XCTestCase {
     
-    let twoSum = Solution1.twoSum
+    let twoSum = Solution_0001.twoSum
     
     func testLengthFourArray() {
         let expectedOutput = setOfUniqueElementsAnyOrder([0,1])

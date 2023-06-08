@@ -3,7 +3,7 @@ import XCTest
 
 final class _0150_EvaluateReversePolishNotationTests : XCTestCase {
     
-    let evalRPN = Solution150.evalRPN
+    let evalRPN = Solution_0150.evalRPN
     
     func testAddMultiply() {
         XCTAssertEqual(evalRPN(["2","1","+","3","*"]), 9)

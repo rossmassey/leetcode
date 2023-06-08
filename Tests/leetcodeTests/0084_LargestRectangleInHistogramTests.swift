@@ -3,7 +3,7 @@ import XCTest
 
 final class _0084_LargestRectangleInHistogramTests : XCTestCase {
 
-    let largestRectangleArea = Solution84.largestRectangleArea
+    let largestRectangleArea = Solution_0084.largestRectangleArea
 
     func testArray() {
         XCTAssertEqual(largestRectangleArea([2,1,5,6,2,3]), 10)

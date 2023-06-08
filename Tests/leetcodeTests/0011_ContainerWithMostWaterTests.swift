@@ -3,7 +3,7 @@ import XCTest
 
 final class _0011_ContainerWithMostWaterTests : XCTestCase {
 
-    let maxArea = Solution11.maxArea
+    let maxArea = Solution_0011.maxArea
 
     func testMaxArea() {
         XCTAssertEqual(maxArea([1,8,6,2,5,4,8,3,7]), 49)

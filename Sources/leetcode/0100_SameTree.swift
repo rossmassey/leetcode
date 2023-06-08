@@ -3,19 +3,19 @@ import common
 /**
  100 - Same Tree - Easy
  */
-struct Solution100 {
-    static func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
+public struct Solution_0100 {
+    /**
+     Runtime:    `O(n)`
+     Space:      `O(n)`
+     */
+    public static func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
         p == q
     }
 }
 
+// extends `TreeNode` to conform to equatable, implementing `==` using dfs/recursion
 extension TreeNode: Equatable {
-    /**
-     Runtime:    `O(n)`
-     Space:      `O(n)`
-     
-     Extends `TreeNode` to conform to equatable, implementing `==` using dfs/recursion
-     */
+
     public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
         return match(lhs,rhs)
     }

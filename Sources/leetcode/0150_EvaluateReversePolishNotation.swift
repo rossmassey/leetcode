@@ -1,14 +1,14 @@
 /**
  150 - Evaluate Reverse Polish Notation - Medium
  */
-struct Solution150 {
+public struct Solution_0150 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
      
      assumes `tokens` will be valid input for reverse polish notation
      */
-    static func evalRPN(_ tokens: [String]) -> Int {
+    public static func evalRPN(_ tokens: [String]) -> Int {
         
         let operations: [String : (Int, Int) -> (Int)] = [
             "+" : { $0 + $1 },

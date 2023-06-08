@@ -1,7 +1,7 @@
 /**
  33 - Search in Rotated Sorted Array - Medium
 */
-struct Solution33 {
+public struct Solution_0033 {
 
     /**
      Runtime:    `O(log n)`
@@ -25,7 +25,7 @@ struct Solution33 {
     
      return `-1` if not found
     */
-    static func search(_ nums: [Int], _ target: Int) -> Int {
+    public static func search(_ nums: [Int], _ target: Int) -> Int {
         var left = 0, right = nums.count - 1
 
         while left <= right {

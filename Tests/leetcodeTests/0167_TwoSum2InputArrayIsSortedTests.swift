@@ -3,7 +3,7 @@ import XCTest
 
 final class _0167_TwoSum2InputArrayIsSortedTests : XCTestCase {
 
-    let twoSum = Solution167.twoSum
+    let twoSum = Solution_0167.twoSum
 
     func testArrayLengthFour() {
         XCTAssertEqual(twoSum([2,7,11,15],9), [1,2])

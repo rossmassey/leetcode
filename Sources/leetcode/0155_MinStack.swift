@@ -1,37 +1,38 @@
 /**
  155 - Min Stack - Medium
  
- Runtime:    `O(1)` for each operation
- Space:      `O(n)`
- 
- Leetcode problem would be better if `top()` and `getMin()` returned `Int?`
- 
+ Leetcode problem would be better if ``top()`` and ``getMin()`` returned `Int?`
  */
-class Solution155 {
+public class Solution_0155 {
+    /// Space:    `O(1)`
     var stack: [(val: Int,min: Int?)]
     var min: Int? 
     
-    init() {
+    public init() {
         stack = [(val: Int,min: Int?)]()
     }
     
-    func push(_ val: Int) {
+    /// Runtime:    `O(1)` Space: `O(n)`
+    public func push(_ val: Int) {
         if min == nil || val < min! {
             min = val
         }
         stack.append((val,min))
     }
     
-    func pop() {
+    /// Runtime:    `O(1)`
+    public func pop() {
         stack.removeLast()
         min = stack.last?.min
     }
     
-    func top() -> Int {
+    /// Runtime:    `O(1)`
+    public func top() -> Int {
         return stack.last!.val
     }
     
-    func getMin() -> Int {
+    /// Runtime:    `O(1)`
+    public func getMin() -> Int {
         return min!
     }
 }

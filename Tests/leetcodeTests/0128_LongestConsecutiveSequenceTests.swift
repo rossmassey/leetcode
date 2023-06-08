@@ -3,7 +3,7 @@ import XCTest
 
 final class _0128_LongestConsecutiveSequenceTests : XCTestCase {
     
-    let longestConsecutiveSequence = Solution128.longestConsecutiveSequence
+    let longestConsecutiveSequence = Solution_0128.longestConsecutiveSequence
     
     func testEmptyArray() {
         XCTAssertEqual(longestConsecutiveSequence([]), 0)

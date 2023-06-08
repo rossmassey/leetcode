@@ -4,7 +4,7 @@ import common
 
 final class _0104_MaximumDepthOfBinaryTreeTests : XCTestCase {
     
-    let maxDepth = Solution104.maxDepth
+    let maxDepth = Solution_0104.maxDepth
 
     func testDepthThreeTree() {
         let input = TreeNode.binaryTreeFrom([3,9,20,nil,nil,15,7])

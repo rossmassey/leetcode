@@ -3,7 +3,7 @@ import XCTest
 
 final class _0981_TimeBasedKeyValueStoreTests : XCTestCase {
     
-    typealias TimeMap = Solution981
+    typealias TimeMap = Solution_0981
     
     func testTimeMap() {
         let timeMap = TimeMap()

@@ -4,7 +4,7 @@ import common
 
 final class _0206_ReverseLinkedListTests : XCTestCase {
 
-    let reverseList = Solution206.reverseList
+    let reverseList = Solution_0206.reverseList
 
     func testSimpleList() {
         let input = ListNode.linkedListFrom([1,2])

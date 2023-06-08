@@ -3,12 +3,12 @@ import common
 /**
  226 - Balanced Binary Tree - Easy
  */
-struct Solution110 {
+public struct Solution_0110 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
      */
-    static func isBalanced(_ root: TreeNode?) -> Bool {
+    public static func isBalanced(_ root: TreeNode?) -> Bool {
         func dfs(_ root: TreeNode?) -> (isBalanced: Bool, height: Int) {
             guard let root = root else { return (true, 0) }
             let (left, right) = (dfs(root.left), dfs(root.right))

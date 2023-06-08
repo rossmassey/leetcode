@@ -4,7 +4,7 @@ import common
 
 final class _0110_BalancedBinaryTreeTests : XCTestCase {
     
-    let isBalanced = Solution110.isBalanced
+    let isBalanced = Solution_0110.isBalanced
 
     func testBalancedTree() {
         XCTAssertTrue(isBalanced(TreeNode.binaryTreeFrom([3,9,20,nil,nil,15,7])))

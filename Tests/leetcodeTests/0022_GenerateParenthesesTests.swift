@@ -4,7 +4,7 @@ import common
 
 final class _0222_GenerateParenthesesTests : XCTestCase {
 
-    let generateParenthesis = Solution22.generateParenthesis
+    let generateParenthesis = Solution_0022.generateParenthesis
 
     func testNThree() {
         let expectedOutput = setOfUniqueElementsAnyOrder(["((()))","(()())","(())()","()(())","()()()"])

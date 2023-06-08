@@ -4,7 +4,7 @@ import common
 
 final class _0049_GroupAnagramsTests : XCTestCase {
     
-    let groupAnagrams = Solution49.groupAnagrams
+    let groupAnagrams = Solution_0049.groupAnagrams
     
     func testAnagramsArray() {
         let input = ["eat","tea","tan","ate","nat","bat"]

@@ -1,12 +1,12 @@
 /**
  238 - Product Except Self - Medium
  */
-struct Solution238 {
+public struct Solution_0238 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
      */
-    static func productExceptSelf(_ nums: [Int]) -> [Int] {
+    public static func productExceptSelf(_ nums: [Int]) -> [Int] {
         var result = [Int](repeating: 1, count: nums.count)
         
         var leftProduct = 1

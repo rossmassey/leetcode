@@ -1,7 +1,7 @@
 /**
  22 - Genereate Parentheses - Medium
  */
-struct Solution22 {
+public struct Solution_0022 {
     /**
      Runtime:    `O(4^n / sqrt(n))`
      Space:      `O(4^n / sqrt(n))`
@@ -9,7 +9,7 @@ struct Solution22 {
      valid parentheses string is a Dyck word, so time and space complexity
      related to growth of Catalan numbers
      */
-    static func generateParenthesis(_ n: Int) -> [String] {
+    public static func generateParenthesis(_ n: Int) -> [String] {
         
         var result = [String]()
         
@@ -36,7 +36,7 @@ struct Solution22 {
      Runtime:    `O(4^n / sqrt(n))`
      Space:      `O(4^n / sqrt(n))`
      */
-    static func generateParenthesisDynamicProgramming(_ n: Int) -> [String] {
+    public static func generateParenthesisDynamicProgramming(_ n: Int) -> [String] {
         
         // base case, return array with an empty string
         guard n > 0 else { return [""] }

@@ -4,7 +4,7 @@ import common
 
 final class _0347_TopKFrequentElementsTests : XCTestCase {
     
-    let topKFrequent = Solution347.topKFrequent
+    let topKFrequent = Solution_0347.topKFrequent
     
     func testArray() {
         let possibleOutput = [1,2]

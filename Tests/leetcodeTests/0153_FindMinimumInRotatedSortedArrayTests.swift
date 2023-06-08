@@ -3,7 +3,7 @@ import XCTest
 
 final class _0153_FindMinimumInRotatedSortedArrayTests : XCTestCase {
 
-    let findMin = Solution153.findMin
+    let findMin = Solution_0153.findMin
 
     func testRotatedByThree() {
         XCTAssertEqual(findMin([3,4,5,1,2]), 1)

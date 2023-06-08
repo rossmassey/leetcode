@@ -1,12 +1,16 @@
 /**
  4 - Median of Two Sorted Arrays - Hard
+
+ > `n` is length of shorter array
 */
-struct Solution4 {
+public struct Solution_0004 {
 
     /**
-     Runtime:    `O(log n)`, `n` is smaller array (`short`)
+     Runtime:    `O(log n)`
      Space:      `O(1)`
     
+
+     
      can just use the `short` array to perform a binary search,
      because for any potential `divider` we pick for `short`,
      there will be a complement in `long`.
@@ -26,9 +30,8 @@ struct Solution4 {
 
      once dividers result in case where left of divider elements is less than
      the right of divider elements, have partitioned correctly
-
     */
-    static func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+    public static func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
         let (short, long) = nums1.count < nums2.count ? (nums1, nums2) : (nums2, nums1)
 
         let mergedCount = short.count + long.count

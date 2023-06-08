@@ -4,7 +4,7 @@ import common
 
 final class _0543_DiameterOfBinaryTreeTests : XCTestCase {
     
-    let diameterOfBinaryTree = Solution543.diameterOfBinaryTree
+    let diameterOfBinaryTree = Solution_0543.diameterOfBinaryTree
 
     func testDiameterThree() {
         XCTAssertEqual(diameterOfBinaryTree(TreeNode.binaryTreeFrom([1,2])), 1)

@@ -3,7 +3,7 @@ import XCTest
 
 final class _0242_ProductExceptSelfTests : XCTestCase {
     
-    let productExceptSelf = Solution238.productExceptSelf
+    let productExceptSelf = Solution_0238.productExceptSelf
     
     func testTwoElementArray() {
         XCTAssertEqual(productExceptSelf([1,2]), [2,1])

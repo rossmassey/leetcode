@@ -3,7 +3,7 @@ import XCTest
 
 final class _0020_ValidParenthesesTests : XCTestCase {
     
-    let isValid = Solution20.isValid
+    let isValid = Solution_0020.isValid
 
     func testOneValidPair() {
         XCTAssertTrue(isValid("()"))

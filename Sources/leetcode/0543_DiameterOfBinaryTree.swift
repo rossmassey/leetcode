@@ -3,12 +3,12 @@ import common
 /**
  543 - Diameter of Binary Tree - Easy
  */
-struct Solution543 {
+public struct Solution_0543 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
      */
-    static func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
+    public static func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var longestPath = 0
         
         @discardableResult
