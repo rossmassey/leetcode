@@ -1,6 +1,16 @@
+![swift logo](https://www.swift.org/assets/images/swift.svg)
+
 # Leetcode
 
-## [Documentation](https://rossmassey.github.io/leetcode/documentation/leetcode/)
+Solutions to leetcode problems implemented in **[Swift](https://www.swift.org/)**
+
+## Documentation
+
+Documentation is generated from the markdown in the solution files, with the DocC documentation compiler
+
+#### [Overview](https://rossmassey.github.io/leetcode/documentation/leetcode/)
+
+#### [Article: Problems organized by Neetcode's Roadmap](https://rossmassey.github.io/leetcode/documentation/leetcode/index)
 
 ## Testing
 
@@ -10,6 +20,8 @@ XCTests can be ran through Xcode or VS Code (with Swift extension), or with:
 swift test
 ```
 
+> Note: Current test cases are just the example inputs/outputs provided by Leetcode, and are not comprehensive
+
 ## Adding new solution and test case
 
 Run the following interactive script to to generate a blank leetcode solution and test case
@@ -17,9 +29,6 @@ Run the following interactive script to to generate a blank leetcode solution an
 ```
 swift Scripts/start-new-problem.swift
 ```
-
-> Note: Current test cases are just the example inputs/outputs provided by Leetcode, and are not comprehensive
-
 ## Documentation
 
 To generate the static documentation in `/docs`, from the repo folder run:
