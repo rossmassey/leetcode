@@ -1,9 +1,11 @@
 /**
  242 - Valid Anagram - Easy
  
- Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
+ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, 
+ and `false` otherwise.
 
- An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+ An **Anagram** is a word or phrase formed by rearranging the letters of a 
+ different word or phrase, typically using all the original letters exactly once.
  
  #### Constraints
  - `1 <= s.length, t.length <= 5 * 10^4`

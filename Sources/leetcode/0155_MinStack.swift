@@ -1,7 +1,8 @@
 /**
  155 - Min Stack - Medium
  
- Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+ Design a stack that supports push, pop, top, and retrieving the minimum element 
+ in constant time.
 
  Implement the `MinStack` class:
 
@@ -13,7 +14,8 @@
  
  #### Constraints
  - `-2^31 <= val <= 2^31 - 1`
- - Methods `pop`, `top` and `getMin` operations will always be called on **non-empty** stacks.
+ - Methods `pop`, `top` and `getMin` operations will always be called on 
+ **non-empty** stacks.
  - At most `3 * 10^4` calls will be made to `push`, `pop`, `top`, and `getMin`.
  */
 public class Solution_0155 {
