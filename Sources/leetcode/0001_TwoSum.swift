@@ -7,24 +7,6 @@
  
  You can return the answer in any order.
  
- #### Examples
- 
- ```
- Input: nums = [2,7,11,15], target = 9
- Output: [0,1]
- Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
- ```
- 
- ```
- Input: nums = [3,2,4], target = 6
- Output: [1,2]
- ```
- 
- ```
- Input: nums = [3,3], target = 6
- Output: [0,1]
- ```
- 
  #### Constraints
  ```
  2 <= nums.length <= 104
@@ -33,19 +15,18 @@
  
  Only one valid answer exists.
  ```
- 
- #### Approach
- 
- Can just use a dictionary to store elements we have seen already, to allow
- one pass through the array to check for values summing to `target`
- 
- > Note: TODO, add this overview to all solutions?
- 
  */
 public struct Solution_0001 {
     /**
      Runtime:    `O(n)`
      Space:      `O(n)`
+     
+     use a dictionary `indexOfComplements` to store potential complements
+     (difference of target and current num) and their indices
+     
+     iterate over `nums`, if current `num` is found in the dictionary,
+     return its `index` along with the `otherIndex` from the dictionary,
+     which will be two indices whose elements add up to the target
      */
     public static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         guard nums.count != 2 else { return [0,1] }
