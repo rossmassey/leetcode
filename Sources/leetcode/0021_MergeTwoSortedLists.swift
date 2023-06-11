@@ -3,12 +3,23 @@ import common
 /**
  21 - Merge Two Sorted Lists - Easy
  
- > `n` is length of `list1`, `m` is length of `list2`
+ You are given the heads of two sorted linked lists `list1` and `list2`.
+
+ Merge the two lists in a one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+
+ Return the _head of the merged linked list._
+ 
+ #### Constraints
+ - The number of nodes in both lists is in the range `[0, 50]`.
+ - `-100 <= Node.val <= 100`
+ - Both `list1` and `list2` are sorted in **non-decreasing** order.
  */
 public struct Solution_0021 {
     /**
      Runtime:    `O(n + m)`
      Space:      `O(n + m)`
+     
+     > `n` is length of `list1`, `m` is length of `list2`
      */
     public static func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         

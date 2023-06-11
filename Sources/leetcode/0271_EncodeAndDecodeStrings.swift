@@ -1,5 +1,14 @@
 /**
  271 - Encode And Decode Strings - Medium
+ 
+ Design an algorithm to encode **a list of strings** to **a string**. The encoded string is then sent over the network and is decoded back to the original list of strings.
+ 
+ You are not allowed to solve the problem using any serialize methods (such as `eval`).
+ 
+ #### Constraints
+ - `1 <= strs.length <= 200`
+ - `0 <= strs[i].length <= 200`
+ - `strs[i]` contains any possible characters out of `256` valid ASCII characters.
  */
 public struct Solution_0271 {
     /**

@@ -1,13 +1,26 @@
 /**
  74 - Search a 2D Matrix - Medium
  
- > `m` is # rows, `n` is # cols
+ You are given an `m x n` integer matrix `matrix` with the following two properties:
+
+ - Each row is sorted in non-decreasing order.
+ - The first integer of each row is greater than the last integer of the previous row.
+
+ Given an integer `target`, return `true` if `target` is in `matrix` or `false` otherwise.
+ 
+ #### Constraints
+ - `m == matrix.length`
+ - `n == matrix[i].length`
+ - `1 <= m, n <= 100`
+ - `-104 <= matrix[i][j], target <= 104`
 */
 public struct Solution_0074 {
     
     /**
      Runtime:    `O(log m + log n)`
      Space:      `O(1)`
+     
+     > `m` is # rows, `n` is # cols’
     
      binary search approach, just treat the 2D array as a 1D array
      

@@ -2,6 +2,14 @@ import common
 
 /**
  226 - Balanced Binary Tree - Easy
+ 
+ Given a binary tree, determine if it is _height-balanced._
+ 
+ A **height-balanced** binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
+ 
+ #### Constraints
+ - The number of nodes in the tree is in the range `[0, 5000]`.
+ - `-10^4 <= Node.val <= 10^4`
  */
 public struct Solution_0110 {
     /**

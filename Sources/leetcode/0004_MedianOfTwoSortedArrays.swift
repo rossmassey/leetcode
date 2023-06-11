@@ -1,16 +1,22 @@
 /**
  4 - Median of Two Sorted Arrays - Hard
-
- > `n` is length of shorter array
+ 
+ Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
+ 
+ #### Constraints
+ - `nums1.length == m`
+ - `nums2.length == n`
+ - `0 <= m <= 1000`
+ - `0 <= n <= 1000`
+ - `1 <= m + n <= 2000`
+ - `-10^6 <= nums1[i], nums2[i] <= 10^6`
 */
 public struct Solution_0004 {
 
     /**
-     Runtime:    `O(log n)`
+     Runtime:    `O(log (min(n,m))`
      Space:      `O(1)`
     
-
-     
      can just use the `short` array to perform a binary search,
      because for any potential `divider` we pick for `short`,
      there will be a complement in `long`.
