@@ -1,8 +1,8 @@
-![swift logo](https://www.swift.org/assets/images/swift.svg)
-
 # Leetcode
 
 Solutions to leetcode problems implemented in **[Swift](https://www.swift.org/)**
+
+![swift logo](https://www.swift.org/assets/images/swift.svg)
 
 ![swift test](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml/badge.svg)
 
