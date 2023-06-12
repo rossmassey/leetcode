@@ -3,7 +3,7 @@ import XCTest
 
 final class {name}Tests : XCTestCase {
 
-    let {function} = Solution{number}.{function}
+    let {function} = Solution_{paddedNumber}.{function}
 
     func test() {
         // TODO: implement test for {name}

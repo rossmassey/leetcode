@@ -9,8 +9,8 @@
         - Function Signature: Function signature used in leetcode
  
     Creates these two files: 
-        - `Sources/leetcode/####-ProblemName.swift`
-        - `Tests/leetcodeTests/####-ProblemNameTests.swift`
+        - `Sources/leetcode/####_ProblemName.swift`
+        - `Tests/leetcodeTests/####_ProblemNameTests.swift`
  
     Expects `solution-template.txt` and `test-template.txt` to be in same
     directory as this script
@@ -50,6 +50,7 @@ let testTemplate = loadFileContent(of: TEST_TEMPLATE_FILENAME, at: scriptsDirect
 // Fill out templates
 let solutionContent = solutionTemplate
     .replacingOccurrences(of: "{number}", with: String(number))
+    .replacingOccurrences(of: "{paddedNumber}", with: paddedNumber)
     .replacingOccurrences(of: "{nameWithSpaces}", with: nameWithSpaces)
     .replacingOccurrences(of: "{difficulty}", with: difficulty)
     .replacingOccurrences(of: "{signature}", with: functionSignature)
@@ -57,7 +58,7 @@ let solutionContent = solutionTemplate
 let testContent = testTemplate
     .replacingOccurrences(of: "{name}", with: name)
     .replacingOccurrences(of: "{function}", with: functionName)
-    .replacingOccurrences(of: "{number}", with: String(number))
+    .replacingOccurrences(of: "{paddedNumber}", with: paddedNumber)
 
 // Write to files
 let solutionFilename = "\(paddedNumber)_\(name).swift"

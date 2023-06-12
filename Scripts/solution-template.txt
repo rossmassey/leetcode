@@ -1,7 +1,12 @@
 /**
  {number} - {nameWithSpaces} - {difficulty}
+ 
+ <#Problem overview#>
+ 
+ #### Constraints
+ <#Constraints#>
 */
-struct Solution{number} {
+struct Solution_{paddedNumber} {
 
     /**
      Runtime:    `O(<#time#>)`
@@ -11,6 +16,5 @@ struct Solution{number} {
     */
     static func {signature} {
         // TODO: implement solution for {nameWithSpaces}
-        fatalError("Solution not yet implemented")
     }
 }
