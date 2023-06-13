@@ -54,7 +54,7 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | | | Sliding Window | | |
 | -- | -- | -- | -- | -- |
 | 🟢 | ``Solution_0121`` | Best Time to Buy And Sell Stock        | [src](https://github.com/rossmassey/leetcode/blob/main/Sources/leetcode/0121_BestTimeToBuyAndSellStock.swift) | [url](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
-| 🟨 |   Solution_0003   | Longest Substring Without Repeating Characters |  | [url](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| 🟨 | ``Solution_0003`` | Longest Substring Without Repeating Characters | [src](https://github.com/rossmassey/leetcode/blob/main/Sources/leetcode/0003_LongestSubstringWithoutRepeatingCharacters.swift) | [url](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | 🟨 |   Solution_0424   | Longest Repeating Character Replacement |  | [url](https://leetcode.com/problems/longest-repeating-character-replacement/) |
 | 🟨 |   Solution_0567   | Permutation In String                  |  | [url](https://leetcode.com/problems/permutation-in-string/) |
 | 🔺 |   Solution_0076   | Minimum Window Substring               |  | [url](https://leetcode.com/problems/minimum-window-substring/) |
