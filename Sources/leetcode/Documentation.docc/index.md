@@ -16,8 +16,8 @@ Problems organized by Neetcode's Algorithm's Roadmap
 
 🔺 - Hard
 
-| | | Arrays and Hashing | |
-| -- | -- | -- | -- |
+| | | Arrays and Hashing |
+| -- | -- | -- |
 | 🟢 | ``Solution_0242`` | Valid Anagram                          
 | 🟢 | ``Solution_0217`` | Contains Duplicate                     
 | 🟢 | ``Solution_0001`` | Two Sum                             
@@ -28,16 +28,16 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟨 | ``Solution_0271`` | Encode and Decode Strings           
 | 🟨 | ``Solution_0128`` | Longest Consecutive Sequence        
 
-| | | Two Pointers | |
-| -- | -- | -- | -- |
+| | | Two Pointers |
+| -- | -- | -- |
 | 🟢 | ``Solution_0125`` | Valid Palindrome                    
 | 🟨 | ``Solution_0167`` | Two Sum II Input Array Is Sorted    
 | 🟨 | ``Solution_0015`` | 3Sum                                
 | 🟨 | ``Solution_0011`` | Container With Most Water           
 | 🔺 | ``Solution_0042`` | Trapping Rain Water                 
 
-| | | Stack | |
-| -- | -- | -- | -- |
+| | | Stack |
+| -- | -- | -- |
 | 🟢 | ``Solution_0020`` | Valid Parentheses                    
 | 🟨 | ``Solution_0155`` | Min Stack                            
 | 🟨 | ``Solution_0150`` | Evaluate Reverse Polish Notation     
@@ -46,8 +46,8 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟨 | ``Solution_0853`` | Car Fleet                            
 | 🔺 | ``Solution_0084`` | Largest Rectangle in Histogram       
 
-| | | Binary Search | |
-| -- | -- | -- | -- |
+| | | Binary Search |
+| -- | -- | -- |
 | 🟨 | ``Solution_0074`` | Search a 2D Matrix                   
 | 🟨 | ``Solution_0875`` | Koko Eating Bananas                  
 | 🟨 | ``Solution_0153`` | Find Minimum in Rotated Sorted Array 
@@ -56,8 +56,8 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟨 | ``Solution_0981`` | Time Based Key-Value Store           
 | 🔺 | ``Solution_0004`` | Median of Two Sorted Arrays          
                                                                    
-| | | Sliding Window | |
-| -- | -- | -- | -- |
+| | | Sliding Window |
+| -- | -- | -- |
 | 🟢 | ``Solution_0121`` | Best Time to Buy And Sell Stock       
 | 🟨 | ``Solution_0003`` | Longest Substring Without Repeating Characters 
 | 🟨 |   Solution_0424   | Longest Repeating Character Replacement 
@@ -65,8 +65,8 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🔺 |   Solution_0076   | Minimum Window Substring              
 | 🔺 |   Solution_0239   | Sliding Window Maximum                
 
-| | |  Linked List | |
-| -- | -- | -- | -- |
+| | |  Linked List |
+| -- | -- | -- |
 | 🟢 | ``Solution_0206`` | Reverse Linked List                   
 | 🟢 | ``Solution_0021`` | Merge Two Sorted Lists                
 | 🟢 |   Solution_0141   | Linked List Cycle                     
@@ -79,8 +79,8 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🔺 |   Solution_0023   | Merge K Sorted Lists                  
 | 🔺 |   Solution_0025   | Reverse Nodes In K Group              
 
-| | | Trees | |
-| -- | -- | -- | -- |
+| | | Trees |
+| -- | -- | -- |
 | 🟢 | ``Solution_0226`` | Invert Binary Tree                    
 | 🟢 | ``Solution_0104`` | Maximum Depth of Binary Tree          
 | 🟢 | ``Solution_0543`` | Diameter of Binary Tree               
