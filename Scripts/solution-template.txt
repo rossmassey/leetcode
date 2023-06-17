@@ -6,7 +6,7 @@
  #### Constraints
  <#Constraints#>
 */
-struct Solution_{paddedNumber} {
+public struct Solution_{paddedNumber} {
 
     /**
      Runtime:    `O(<#time#>)`
@@ -14,7 +14,7 @@ struct Solution_{paddedNumber} {
     
      <#Explanation....#>
     */
-    static func {signature} {
+    public static func {signature} {
         // TODO: implement solution for {nameWithSpaces}
     }
 }

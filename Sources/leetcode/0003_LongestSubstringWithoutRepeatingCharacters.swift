@@ -9,7 +9,7 @@
  - `0 <= s.length <= 5 * 10^4`
  - `s` consists of English letters, digits, symbols and spaces.
 */
-struct Solution_0003 {
+public struct Solution_0003 {
 
     /**
      Runtime:    `O(n)`
@@ -25,7 +25,7 @@ struct Solution_0003 {
      
      after each iteration, update the last seen index of current `letter` to the current `index`
     */
-    static func lengthOfLongestSubstring(_ s: String) -> Int {
+    public static func lengthOfLongestSubstring(_ s: String) -> Int {
         guard s.count > 0 else { return 0 }
 
         var longestSubstring = 0
