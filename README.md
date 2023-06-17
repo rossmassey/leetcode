@@ -6,7 +6,7 @@ Solutions to leetcode problems implemented in **[Swift](https://www.swift.org/)*
 
 ## Documentation
 
-![deploy documentation](https://github.com/rossmassey/leetcode/actions/workflows/gh-pages.yml/badge.svg)
+[![Deploy Documentation](https://github.com/rossmassey/leetcode/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/rossmassey/leetcode/actions/workflows/gh-pages.yml)
 
 
 Documentation is generated from the markdown in the solution files, with the DocC documentation compiler
@@ -17,7 +17,7 @@ Documentation is generated from the markdown in the solution files, with the Doc
 
 ## Testing
 
-![swift tests](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml/badge.svg)
+[![Swift Tests](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml/badge.svg)](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml)
 
 XCTests can be ran through Xcode or VS Code (with Swift extension), or with:
 
