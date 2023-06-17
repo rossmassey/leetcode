@@ -1,7 +1,7 @@
 import common
 
 /**
- 104 - Maximum Depth of Binary Tree - Easy
+ **[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)** - Easy
  
  Given the `root` of a binary tree, return its _maximum depth._
 

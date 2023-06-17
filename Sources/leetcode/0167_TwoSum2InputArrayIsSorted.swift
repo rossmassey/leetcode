@@ -1,5 +1,5 @@
 /**
- 167 - Two Sum II Input Array Is Sorted - Medium
+ **[Two Sum II Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)** - Medium
  
  Given a **1-indexed** array of integers `numbers` that is already **sorted in 
  non-decreasing order**, find two numbers such that they add up to a specific 

@@ -1,7 +1,7 @@
 import common
 
 /**
- 543 - Diameter of Binary Tree - Easy
+ **[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)** - Easy
  
  Given the `root` of a binary tree, return the length of the **diameter** of 
  the tree.

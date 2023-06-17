@@ -1,7 +1,7 @@
 import common
 
 /**
- 226 - Balanced Binary Tree - Easy
+ **[Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)** - Easy
  
  Given a binary tree, determine if it is _height-balanced._
  

@@ -1,5 +1,5 @@
 /**
- 1 - Two Sum - Easy
+ **[Two Sum](https://leetcode.com/problems/two-sum/)** - Easy
 
  Given an array of integers `nums` and an integer `target`, return indices of 
  the two numbers such that they add up to target.
