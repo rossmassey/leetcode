@@ -4,52 +4,68 @@
  
     Inputs (defaults to Xcode <#placeholders#> when not given):
         - Number: Problem number on leetcode
-        - Name: Problem name
-        - Difficulty: Problem difficulty (defaults Medium)
         - Function Signature: Function signature used in leetcode
  
     Creates these two files: 
         - `Sources/leetcode/####_ProblemName.swift`
         - `Tests/leetcodeTests/####_ProblemNameTests.swift`
  
-    Expects `solution-template.txt` and `test-template.txt` to be in same
-    directory as this script
+    Expects `solution-template.txt` and `test-template.txt` in subdirectory `Templates/`
  */
 
 import Foundation
 
 printTitle("Start New Problem Script")
 
-// Constants
+/// Constants
 let SOURCES_DIRECTORY = "/../Sources/leetcode/"
 let TESTS_DIRECTORY = "/../Tests/leetcodeTests/"
 
-let SOLUTION_TEMPLATE_FILENAME = "/solution-template.txt"
-let TEST_TEMPLATE_FILENAME = "/test-template.txt"
+let SOLUTION_TEMPLATE_FILENAME = "/Templates/solution-template.txt"
+let TEST_TEMPLATE_FILENAME = "/Templates/test-template.txt"
 
-// User Inputs
+let LEETCODE_BASE_URL = "https://leetcode.com"
+let PROBLEMS_API_PATH = "api/problems/all"
+
+/// User Inputs
 let number = Int(getInputFor("Number")) ?? 0
-let paddedNumber = String(format: "%04d", number)
-
-let nameWithSpaces = getInputFor("Name")
-let name = nameWithSpaces.capitalized.replacingOccurrences(of: " ", with: "")
-
-let difficulty = getDifficulty()
-
 let functionInput = getInputFor("Function Signature")
+
+/// Leetcode API
+let problemSet: LeetcodeProblemSet
+
+do {
+    problemSet = try await fetchLeetcodeProblems()
+} catch {
+    print("Error fetching problem set: \(error)")
+    exit(1)
+}
+
+/// Problem Info
+guard let problemInfo = problemSet.statStatusPairs.first(where: { $0.stat.frontendQuestionId == number }) else {
+    print("Problem number \(number) not found in LeetCode problems set.")
+    exit(1)
+}
+
+let nameWithSpaces = problemInfo.stat.questionTitle
+let difficulty = parseDifficulty(problemInfo.difficulty.level)
+let url = "\(LEETCODE_BASE_URL)/problems/\(problemInfo.stat.questionTitleSlug)"
+
+let paddedNumber = String(format: "%04d", number)
+let name = nameWithSpaces.capitalized.replacingOccurrences(of: " ", with: "")
 let (functionName, functionSignature) = parseSignature(functionInput)
 
-// Paths
+/// Paths
 let scriptFilePath = URL(fileURLWithPath: #file)
 let scriptsDirectoryPath = scriptFilePath.deletingLastPathComponent().path
 
-// Load templates
+/// Load templates
 let solutionTemplate = loadFileContent(of: SOLUTION_TEMPLATE_FILENAME, at: scriptsDirectoryPath)
 let testTemplate = loadFileContent(of: TEST_TEMPLATE_FILENAME, at: scriptsDirectoryPath)
 
-// Fill out templates
+/// Fill out templates
 let solutionContent = solutionTemplate
-    .replacingOccurrences(of: "{number}", with: String(number))
+    .replacingOccurrences(of: "{url}", with: url)
     .replacingOccurrences(of: "{paddedNumber}", with: paddedNumber)
     .replacingOccurrences(of: "{nameWithSpaces}", with: nameWithSpaces)
     .replacingOccurrences(of: "{difficulty}", with: difficulty)
@@ -60,7 +76,7 @@ let testContent = testTemplate
     .replacingOccurrences(of: "{function}", with: functionName)
     .replacingOccurrences(of: "{paddedNumber}", with: paddedNumber)
 
-// Write to files
+/// Write to files
 let solutionFilename = "\(paddedNumber)_\(name).swift"
 let testFilename = "\(paddedNumber)_\(name)Tests.swift"
 
@@ -153,21 +169,68 @@ func getInputFor(_ label: String, template: String? = nil) -> String {
 }
 
 /**
-    Reads a line from the standard input, interprets it as a difficulty level, and returns the interpreted level.
+    Calls the leetcode API to get information about problems
 
-    - Returns: A string representing the difficulty level: "Easy", "Medium" (default), or "Hard".
+    - Returns: A ``LeetcodeProblemSet`` containing all the current leetcode problems
 */
+func fetchLeetcodeProblems() async throws -> LeetcodeProblemSet {
+    let url = URL(string: "\(LEETCODE_BASE_URL)/\(PROBLEMS_API_PATH)/")!
+    let (data, _) = try await URLSession.shared.data(from: url)
+    let decoder = JSONDecoder()
+    let problemSet = try decoder.decode(LeetcodeProblemSet.self, from: data)
+    return problemSet
+}
 
-func getDifficulty() -> String {
-    print("Difficulty (e/m/h): ", terminator: "")
-    let input = readLine() ?? ""
+/**
+    Maps an integer to a string representing the problem's difficulty level.
 
-    switch input.lowercased() {
-    case "e":
+    - Parameter level: The integer representing the problem's difficulty level.
+    - Returns: A string representing the problem's difficulty level: "Easy", "Medium" (default), or "Hard".
+*/
+func parseDifficulty(_ level: Int) -> String {
+    switch level {
+    case 1:
         return "Easy"
-    case "h":
+    case 3:
         return "Hard"
     default:
-        return  "Medium"
+        return "Medium"
     }
+}
+
+//---------------------------------------------------------------------------//
+
+// JSON Codables
+
+struct LeetcodeProblemSet: Codable {
+    let statStatusPairs: [StatStatusPair]
+
+    enum CodingKeys: String, CodingKey {
+        case statStatusPairs = "stat_status_pairs"
+    }
+}
+
+struct StatStatusPair: Codable {
+    let stat: Stat
+    let difficulty: Difficulty
+
+    enum CodingKeys: String, CodingKey {
+        case stat, difficulty
+    }
+}
+
+struct Stat: Codable {
+    let questionTitle: String
+    let questionTitleSlug: String
+    let frontendQuestionId: Int
+
+    enum CodingKeys: String, CodingKey {
+        case questionTitle = "question__title"
+        case questionTitleSlug = "question__title_slug"
+        case frontendQuestionId = "frontend_question_id"
+    }
+}
+
+struct Difficulty: Codable {
+    let level: Int
 }

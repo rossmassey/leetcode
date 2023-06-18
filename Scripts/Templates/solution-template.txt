@@ -1,5 +1,5 @@
 /**
- {number} - {nameWithSpaces} - {difficulty}
+ **[{nameWithSpaces}]({url})** - {difficulty}
  
  <#Problem overview#>
  

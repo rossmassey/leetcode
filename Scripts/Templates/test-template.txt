@@ -1,13 +1,11 @@
 import XCTest
 @testable import leetcode
 
-final class {name}Tests : XCTestCase {
+final class _{paddedNumber}_{name}Tests : XCTestCase {
 
     let {function} = Solution_{paddedNumber}.{function}
 
     func test() {
-        // TODO: implement test for {name}
-        XCTExpectFailure("Testcase not yet implemented")
         XCTAssertEqual(true, false)
     }
 
