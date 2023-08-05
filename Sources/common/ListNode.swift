@@ -15,18 +15,25 @@ public extension ListNode {
         Converts an array into a Linked List of `ListNode?`
 
         - Parameter array: The array to be converted into a Linked List
+        - Paremter pos: The index of a previous node to cycle to (optional)
         - Returns: The head of the Linked List, or nil if the array was empty
     */
-    static func linkedListFrom(_ array: [Int]) -> ListNode? {
+    static func linkedListFrom(_ array: [Int], pos: Int = -1) -> ListNode? {
         guard !array.isEmpty else { return nil }
         
         let head = ListNode(array[0])
         var currentNode = head
+        var nodes = [currentNode]
         
         for value in array.dropFirst() {
             let newNode = ListNode(value)
             currentNode.next = newNode
             currentNode = newNode
+            nodes.append(newNode)
+        }
+        
+        if pos >= 0 && pos < nodes.count {
+            currentNode.next = nodes[pos]
         }
         
         return head
