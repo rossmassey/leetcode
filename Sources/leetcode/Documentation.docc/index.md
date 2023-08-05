@@ -69,7 +69,7 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | -- | -- | -- |
 | 🟢 | ``Solution_0206`` | Reverse Linked List                   
 | 🟢 | ``Solution_0021`` | Merge Two Sorted Lists                
-| 🟢 |   Solution_0141   | Linked List Cycle                     
+| 🟢 | ``Solution_0141`` | Linked List Cycle                     
 | 🟨 |   Solution_0143   | Reorder List                          
 | 🟨 |   Solution_0019   | Remove Nth Node From End of List   
 | 🟨 |   Solution_0138   | Copy List With Random Pointer       
