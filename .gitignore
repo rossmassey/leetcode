@@ -1,10 +1,31 @@
-.DS_Store
-/.build
-/Packages
-/*.xcodeproj
+# Xcode-related files
+# -------------------
+*.xcodeproj
 xcuserdata/
 DerivedData/
-.swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/config/registries.json
+
+# Build-related files
+# -------------------
+/.build
+
+# Packages & Dependencies
+# -----------------------
+/Packages
+
+# Other files and directories
+# ---------------------------
+
+# macOS system file
+.DS_Store
+
+# used for authentication with remote repositories
 .netrc
+
+# profile data, like code coverage information
 *.profraw
+
+# generated documentation
+/_site
+
