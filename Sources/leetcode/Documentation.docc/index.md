@@ -48,11 +48,11 @@ Problems organized by Neetcode's Algorithm's Roadmap
 
 | | | Binary Search |
 | -- | -- | -- |
+| 🟢 | ``Solution_0704`` | Binary Search  
 | 🟨 | ``Solution_0074`` | Search a 2D Matrix                   
 | 🟨 | ``Solution_0875`` | Koko Eating Bananas                  
 | 🟨 | ``Solution_0153`` | Find Minimum in Rotated Sorted Array 
 | 🟨 | ``Solution_0033`` | Search in Rotated Sorted Array       
-| 🟢 | ``Solution_0704`` | Binary Search                        
 | 🟨 | ``Solution_0981`` | Time Based Key-Value Store           
 | 🔺 | ``Solution_0004`` | Median of Two Sorted Arrays          
                                                                    
@@ -73,7 +73,7 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟨 | ``Solution_0143`` | Reorder List                          
 | 🟨 | ``Solution_0019`` | Remove Nth Node From End of List   
 | 🟨 | ``Solution_0138`` | Copy List With Random Pointer       
-| 🟨 |   Solution_0002   | Add Two Numbers                       
+| 🟨 | ``Solution_0002`` | Add Two Numbers                       
 | 🟨 |   Solution_0287   | Find The Duplicate Number             
 | 🟨 |   Solution_0146   | LRU Cache                             
 | 🔺 |   Solution_0023   | Merge K Sorted Lists                  
