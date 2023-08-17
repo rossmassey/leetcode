@@ -73,4 +73,30 @@ public extension ListNode {
         
         return pointer1 == nil && pointer2 == nil
     }
+    
+    /**
+        Retrieves the i'th element of a linked list
+     
+        **warning:** does not check for cycles
+
+        - Parameter head: the head node
+        - Parameter index: index of the desired node in the linked list.
+        - Returns: the i'th node of the linked list or `nil` if the index is out of bounds
+    */
+    static func getNode(_ index: Int, from head: ListNode?) -> ListNode? {
+            guard index >= 0 else { return nil }
+
+            var currentNode: ListNode? = head
+            var currentIndex = 0
+
+            while let node = currentNode {
+                if currentIndex == index {
+                    return node
+                }
+                currentNode = node.next
+                currentIndex += 1
+            }
+
+            return nil
+        }
 }
