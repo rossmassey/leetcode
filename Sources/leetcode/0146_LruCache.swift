@@ -63,7 +63,7 @@ public class Solution_0146 {
      get the `value` if `key` exists, else return `-1`
      if exists, set to most recently used
      */
-    func get(_ key: Int) -> Int {
+    public func get(_ key: Int) -> Int {
         guard let node = cache[key] else { return -1 }
         
         removeFromList(node)
@@ -80,7 +80,7 @@ public class Solution_0146 {
      create `newNode` and set to most recently used
      if `cache` is at `capacity`, remove least recently used
      */
-    func put(_ key: Int, _ value: Int) {
+    public func put(_ key: Int, _ value: Int) {
         if let oldNode = cache[key] {
             removeFromList(oldNode)
         }
