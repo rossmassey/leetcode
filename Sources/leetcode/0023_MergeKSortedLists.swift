@@ -26,7 +26,7 @@ public struct Solution_0023 {
     
      divide and conquer to improve on `O(nk)` approach of merging one by one
      
-     use `O(n)` merge two sorted lists from leetcode #21 to merge in pairs,
+     use `O(n)` merge two sorted lists from ``Solution_0021`` to merge in pairs,
      halving number of lists each time
      
      `log k` iterations until merged into single list
