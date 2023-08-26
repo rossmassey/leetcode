@@ -44,8 +44,8 @@ public struct Solution_0021 {
      */
     public static func mergeTwoListsIteratively(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         
-        let tempNode = ListNode()
-        var tail: ListNode = tempNode
+        let dummy = ListNode()
+        var tail: ListNode = dummy
         
         var pointer1 = list1
         var pointer2 = list2
@@ -61,12 +61,8 @@ public struct Solution_0021 {
             tail = tail.next!
         }
         
-        if pointer1 != nil {
-            tail.next = pointer1
-        } else {
-            tail.next = pointer2
-        }
+        tail.next = pointer1 ?? pointer2
         
-        return tempNode.next
+        return dummy.next
     }
 }
