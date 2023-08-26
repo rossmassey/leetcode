@@ -76,7 +76,7 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟨 | ``Solution_0002`` | Add Two Numbers                       
 | 🟨 | ``Solution_0287`` | Find The Duplicate Number             
 | 🟨 | ``Solution_0146`` | LRU Cache                             
-| 🔺 |   Solution_0023   | Merge K Sorted Lists                  
+| 🔺 | ``Solution_0023`` | Merge K Sorted Lists                  
 | 🔺 |   Solution_0025   | Reverse Nodes In K Group              
 
 | | | Trees |
