@@ -61,7 +61,7 @@ Problems organized by Neetcode's Algorithm's Roadmap
 | 🟢 | ``Solution_0121`` | Best Time to Buy And Sell Stock       
 | 🟨 | ``Solution_0003`` | Longest Substring Without Repeating Characters 
 | 🟨 | ``Solution_0424`` | Longest Repeating Character Replacement 
-| 🟨 |   Solution_0567   | Permutation In String                 
+| 🟨 | ``Solution_0567`` | Permutation In String                 
 | 🔺 |   Solution_0076   | Minimum Window Substring              
 | 🔺 |   Solution_0239   | Sliding Window Maximum                
 
