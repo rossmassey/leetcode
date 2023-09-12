@@ -27,7 +27,7 @@ public struct Solution_0100 {
 extension TreeNode: Equatable {
 
     public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
-        return match(lhs,rhs)
+        return match(lhs, rhs)
     }
     
     static func match (_ p: TreeNode?, _ q: TreeNode?) -> Bool {

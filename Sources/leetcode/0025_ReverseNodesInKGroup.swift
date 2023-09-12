@@ -18,7 +18,6 @@ import common
 ///
 public struct Solution_0025 {
 
-
     /// Runtime:    `O(n)`
     /// Space:      `O(1)`
     ///
@@ -55,7 +54,6 @@ public struct Solution_0025 {
 
         return sentinel.next
     }
-
     
     /**
      Return node `k` places away

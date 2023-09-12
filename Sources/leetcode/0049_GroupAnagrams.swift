@@ -22,7 +22,7 @@ public struct Solution_0049 {
     public static func groupAnagrams(_ strs: [String]) -> [[String]] {
         let asciiStart = Character("a").asciiValue!
         
-        var answer = [[Int]:[String]]()
+        var answer = [[Int]: [String]]()
         for s in strs {
             var count = Array(repeating: 0, count: 26)
             for character in s {
@@ -33,4 +33,3 @@ public struct Solution_0049 {
         return answer.map { $0.value }
     }
 }
-

@@ -28,7 +28,7 @@ public struct Solution_0001 {
      which will be two indices whose elements add up to the `target`
      */
     public static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        guard nums.count != 2 else { return [0,1] }
+        guard nums.count != 2 else { return [0, 1] }
         
         var indexOfComplements = [Int: Int]()
         
@@ -38,6 +38,6 @@ public struct Solution_0001 {
             }
             indexOfComplements[target - num] = index
         }
-        return [-1,-1]
+        return [-1, -1]
     }
 }

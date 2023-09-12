@@ -20,12 +20,12 @@
  */
 public class Solution_0155 {
 
-    var stack: [(val: Int,min: Int?)]
+    var stack: [(val: Int, min: Int?)]
     var min: Int? 
     
     /// Overall Space Complexity: `O(n)`
     public init() {
-        stack = [(val: Int,min: Int?)]()
+        stack = [(val: Int, min: Int?)]()
     }
     
     /**
@@ -36,7 +36,7 @@ public class Solution_0155 {
         if min == nil || val < min! {
             min = val
         }
-        stack.append((val,min))
+        stack.append((val, min))
     }
     
     /**

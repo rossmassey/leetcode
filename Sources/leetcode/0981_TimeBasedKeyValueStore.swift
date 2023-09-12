@@ -24,7 +24,7 @@
  */
 public class Solution_0981 {
     
-    var timeMap: [String : [(value: String, time: Int)]]
+    var timeMap: [String: [(value: String, time: Int)]]
 
     public init() {
         timeMap = [:]

@@ -27,7 +27,7 @@ public struct Solution_0242 {
         characterCounts(s) == characterCounts(t)
     }
     
-    private static func characterCounts(_ s: String) -> [Character:Int] {
+    private static func characterCounts(_ s: String) -> [Character: Int] {
         s.reduce(into: [:]) { charactersSeen, character in
             charactersSeen[character, default: 0] += 1
         }

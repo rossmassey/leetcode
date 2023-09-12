@@ -29,11 +29,11 @@ public struct Solution_0150 {
      */
     public static func evalRPN(_ tokens: [String]) -> Int {
         
-        let operations: [String : (Int, Int) -> (Int)] = [
-            "+" : { $0 + $1 },
-            "-" : { $0 - $1 },
-            "*" : { $0 * $1 },
-            "/" : { $0 / $1 }
+        let operations: [String: (Int, Int) -> (Int)] = [
+            "+": { $0 + $1 },
+            "-": { $0 - $1 },
+            "*": { $0 * $1 },
+            "/": { $0 / $1 }
         ]
         
         var stack: [Int] = []

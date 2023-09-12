@@ -29,3 +29,5 @@ DerivedData/
 # generated documentation
 /_site
 
+# vscode user configuration
+.vscode

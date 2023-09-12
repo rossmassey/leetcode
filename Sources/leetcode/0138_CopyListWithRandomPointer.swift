@@ -45,7 +45,7 @@ public struct Solution_0138 {
      use a second pass to map copied nodes to original's `.next` and `.random`
     */
     public static func copyRandomList(_ head: Node?) -> Node? {
-        var originalToCopy = [Node?:Node]()
+        var originalToCopy = [Node?: Node]()
 
         // key copied nodes by originals in dictionary
         var pointer = head

@@ -33,7 +33,6 @@ public struct Solution_0143 {
         interleave(head, with: reverse(from: getMiddle(head)))
     }
     
-    
     static func getMiddle(_ head: ListNode?) -> ListNode? {
         var slow = head
         var fast = head
@@ -46,7 +45,7 @@ public struct Solution_0143 {
     }
 
     static func reverse(from node: ListNode?) -> ListNode? {
-        var prev: ListNode? = nil
+        var prev: ListNode?
         var current = node
         
         while current != nil {
@@ -61,7 +60,7 @@ public struct Solution_0143 {
     static func interleave(_ list1: ListNode?, with list2: ListNode?) {
         var first = list1
         var second = list2
-        var tmpNext: ListNode? = nil
+        var tmpNext: ListNode?
 
         while second?.next != nil {
             tmpNext = first?.next

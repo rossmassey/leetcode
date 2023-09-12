@@ -9,7 +9,6 @@ public class ListNode {
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
 }
 
-
 public extension ListNode {
     /**
         Converts an array into a Linked List of `ListNode?`

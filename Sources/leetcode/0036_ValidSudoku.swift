@@ -27,9 +27,9 @@ public struct Solution_0036 {
      `Hashable` and contains a pair mapped to `row/3` and `col/3`
      */
     public static func isValidSudoku(_ board: [[Character]]) -> Bool {
-        var cols = [Int:Set<Character>]()
-        var rows = [Int:Set<Character>]()
-        var squares = [Int:Set<Character>]()
+        var cols = [Int: Set<Character>]()
+        var rows = [Int: Set<Character>]()
+        var squares = [Int: Set<Character>]()
         
         for row in 0..<9 {
             for col in 0..<9 {

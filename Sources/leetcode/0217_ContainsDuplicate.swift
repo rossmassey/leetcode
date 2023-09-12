@@ -14,7 +14,7 @@ public struct Solution_0217 {
      Space:      `O(n)`
      */
     public static func containsDuplicate(_ nums: [Int]) -> Bool {
-        var seen = [Int:Bool]()
+        var seen = [Int: Bool]()
         for num in nums {
             if seen[num] ?? false { return true }
             seen[num] = true

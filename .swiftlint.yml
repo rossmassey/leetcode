@@ -1,0 +1,12 @@
+disabled_rules: # rule identifiers turned on by default to exclude from running
+  - trailing_whitespace
+  - type_name
+  - identifier_name
+  - line_length
+  - statement_position
+  - for_where
+
+included: # case-sensitive paths to include during linting. `--path` is ignored if present
+  - Sources
+
+reporter: "github-actions-logging" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging, summary)

@@ -30,7 +30,7 @@ public struct Solution_0424 {
     */
     public static func characterReplacement(_ s: String, _ k: Int) -> Int {
         let array = Array(s)
-        var counts = [Character:Int]()
+        var counts = [Character: Int]()
         var longestSubstring = 0
         
         // sliding window

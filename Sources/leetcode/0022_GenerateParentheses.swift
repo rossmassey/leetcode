@@ -29,7 +29,6 @@ public struct Solution_0022 {
             // can add "(" at any point until have n of them
             if open < n { backtrack(candidate + "(", open + 1, close) }
             
-            
             // ")" also still bound by n, but also by number of "("
             if close < open { backtrack(candidate + ")", open, close + 1) }
         }

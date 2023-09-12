@@ -32,9 +32,9 @@ public struct Solution_0020 {
         guard s.count % 2 == 0 else { return false }
         
         let pairs: [Character: Character] = [
-            "}" : "{",
-            "]" : "[",
-            ")" : "(",
+            "}": "{",
+            "]": "[",
+            ")": "("
         ]
         
         var stack = [Character]()
