@@ -1,7 +1,7 @@
 import XCTest
 @testable import leetcode
 
-final class LongestSubstringWithoutRepeatingCharactersTests : XCTestCase {
+final class _0003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
 
     let lengthOfLongestSubstring = Solution_0003.lengthOfLongestSubstring
 
