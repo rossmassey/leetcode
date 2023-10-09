@@ -15,10 +15,11 @@ swift Scripts/start-new-problem.swift
 
 [![Deploy Documentation](https://github.com/rossmassey/leetcode/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/rossmassey/leetcode/actions/workflows/gh-pages.yml)
 
+![documentation pipeline diagram](Documentation/gh-pages-pipeline.PNG)
 
 Documentation is generated from the markdown in the solution files, with the DocC documentation compiler
 
-#### [Overview](https://rossmassey.github.io/leetcode/documentation/leetcode/)
+#### [Main Page](https://rossmassey.github.io/leetcode/documentation/leetcode/)
 
 #### [Article: Problems organized by Neetcode's Roadmap](https://rossmassey.github.io/leetcode/documentation/leetcode/index)
 
@@ -41,6 +42,8 @@ bash Scripts/preview-docs.sh
 ## Testing and Linting
 
 [![Swift Code Validation](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml/badge.svg)](https://github.com/rossmassey/leetcode/actions/workflows/swift.yml)
+
+![swift code validation pipeline diagram](Documentation/swift-pipeline.PNG)
 
 Linting can be ran with the [SwiftLint](https://github.com/realm/SwiftLint) tool:
 
